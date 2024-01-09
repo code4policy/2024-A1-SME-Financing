@@ -1,52 +1,70 @@
-// Define the dimensions of the SVG canvas and the radius of the pie chart
-const width = 400;
-const height = 400;
-const radius = Math.min(width, height) / 2;
+// Load the CSV data
+d3.csv("Data_Sheet.csv").then(function(data) {
+    // Group data by NAICS code and calculate total firms
+       const naicsData = d3.rollup(data, v => d3.sum(v, d => +d.Firms.replace(/,/g, '')), d => d["NAICS_Sector"]);
+    // Convert the grouped data to an array of objects
+    const naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Sector: key, TotalFirms: value }));
 
-// Create an SVG element and append it to the chart-container div
-const svg = d3.select("#pie-chart")
-    .attr("width", width)
-    .attr("height", height)
-    .append("g")
-    .attr("transform", `translate(${width / 2}, ${height / 2})`);
+    // Sort the data by NAICS Description
+    naicsArray.sort((a, b) => a.NAICS_Sector.localeCompare(b.NAICS_Sector));
 
-// Load your CSV data
-d3.csv("Data_Sheet.csv", function(data) {
-    // Group the data by "NAICS Description" and calculate the sum of "Firms" for each group
-   // console.log(data);
-    const dataGrouped = d3.group(data, d => d.NAICS_Description);
-    //dataGrouped.forEach((value, key, map) => {
-    //    value.forEach(d => {
-    //        d.Firms = parseInt(d.Firms); // Convert "Firms" to a number
-    //    });
-    });
+    // Select the table body
+    const tableBody = d3.select("tbody");
 
-    // Create a color scale for the pie chart
-    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
-
-    // Create a pie generator
-    const pie = d3.pie()
-        .value(d => d3.sum(d.value, e => e.Firms)); // Use d.value to access the values within each group
-
-    // Generate the pie chart data
-    const pieData = pie(Array.from(dataGrouped)); // Convert the grouped data to an array
-
-    // Create arcs for the pie chart segments
-    const arc = d3.arc()
-        .innerRadius(0)
-        .outerRadius(radius);
-
-    // Create a path for each pie chart segment
-    const paths = svg.selectAll("path")
-        .data(pieData)
+    // Bind the data to table rows and cells
+    const rows = tableBody.selectAll("tr")
+        .data(naicsArray)
         .enter()
-        .append("path")
-        .attr("d", arc)
-        .attr("fill", (d, i) => colorScale(i))
-        .attr("stroke", "white")
-        .style("stroke-width", "2px");
+        .append("tr");
 
-    // Add tooltips
-    paths.append("title")
-        .text(d => `${d.data.key}: ${d.value} firms`);
-//});
+    // Append cells for NAICS code and Total Firms
+    rows.append("td").text(d => d.NAICS_Sector);
+    rows.append("td").text(d => d.TotalFirms.toLocaleString());
+
+    
+    const margin = { top: 60, right: 60, bottom: 80, left: 70 };
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
+
+    const svg = d3.select("#table-container")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    const x = d3.scaleBand()
+        .domain(naicsArray.map(d => d.NAICS_Sector))
+        .range([0, width])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(naicsArray, d => d.TotalFirms)])
+        .nice()
+        .range([height, 0]);
+
+    svg.append("g")
+        .selectAll("rect")
+        .data(naicsArray)
+        .enter()
+        .append("rect")
+        .attr("x", d => x(d.NAICS_Sector) + 5) // Add space between bars
+        .attr("y", d => y(d.TotalFirms))
+        .attr("width", x.bandwidth() - 10) // Reduce bar thickness
+        .attr("height", d => height - y(d.TotalFirms))
+        .attr("fill", "steelblue");
+
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "rotate(-45)")
+        .style("text-anchor", "end");
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+}).catch(function(error) {
+    console.log("Error loading the CSV file:", error);
+
+});
