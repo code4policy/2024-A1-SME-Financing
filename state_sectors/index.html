@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D3.js CSV Visualization</title>
+    <title>Which Types of Small Businesses Prevail in Each State?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>NAICS Firms Summary</h1>
+
+    <h1>Which Types of Small Businesses Prevail in Each State?</h1>
     
     <div>
         <label for="stateSelector">Select State:</label>
         <select id="stateSelector"></select>
     </div>
-
-    <div id="table-container">
-        <table id="firms-table">
-            <thead>
-                <tr>
-                    <th>NAICS Description</th>
-                    <th>Total Firms</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+    
+    <div id="visualization-container">
+        <div id="table-container">
+            <h1>NAICS Firms Summary</h1>
+            <table id="firms-table">
+                <thead>
+                    <tr>
+                        <th>NAICS Description</th>
+                        <th>Total Firms</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="chart-container"></div>
     </div>
-
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
