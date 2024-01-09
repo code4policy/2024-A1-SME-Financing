@@ -29,11 +29,18 @@ function updateVisualization(data, selectedState) {
     // Filter data based on the selected state and "Enterprise_Size" value
     const stateData = data.filter(d => d.State_Name === selectedState && d.Enterprise_Size === "01: Total");
 
+    // Handle NAICS code ranges
+    stateData.forEach(d => {
+        if (d.NAICS.includes('-')) {
+            d.NAICS = getMidpointFromRange(d.NAICS);
+        }
+    });
+
     // Group data by NAICS code and calculate total firms
     const naicsData = d3.rollup(stateData, v => d3.sum(v, d => +d.Firms.replace(/,/g, '')), d => d["NAICS_Description"]);
 
     // Convert the grouped data to an array of objects
-    let naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Description: key, TotalFirms: value }));
+    const naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Description: key, TotalFirms: value }));
 
     // Sort the data by NAICS Description (most firms to least)
     naicsArray.sort((a, b) => b.TotalFirms - a.TotalFirms);
@@ -56,7 +63,6 @@ function updateVisualization(data, selectedState) {
     // Update the bar chart
     updateBarChart(naicsArray);
 }
-
 
 // Declare the svg variable outside the function to keep track of the existing SVG
 let svg;
@@ -112,4 +118,10 @@ function updateBarChart(data) {
 
     svg.append("g")
         .call(d3.axisLeft(y));
+}
+
+// Function to get the midpoint from a range (e.g., "31-33")
+function getMidpointFromRange(range) {
+    const [start, end] = range.split('-').map(Number);
+    return Math.floor((start + end) / 2).toString();
 }
