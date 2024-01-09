@@ -40,14 +40,19 @@ function updateVisualization(data, selectedState) {
     const naicsData = d3.rollup(stateData, v => d3.sum(v, d => +d.Firms.replace(/,/g, '')), d => d["NAICS_Description"]);
 
     // Convert the grouped data to an array of objects
-    const naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Description: key, TotalFirms: value }));
+    let naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Description: key, TotalFirms: value }));
 
     // Sort the data by NAICS Description (most firms to least)
     naicsArray.sort((a, b) => b.TotalFirms - a.TotalFirms);
 
     // Update the table
     const tableBody = d3.select("tbody");
-    const rows = tableBody.selectAll("tr").data(naicsArray);
+
+    // Select all existing rows
+    const rows = tableBody.selectAll("tr").data(naicsArray, d => d.NAICS_Description);
+
+    // Remove old rows
+    rows.exit().remove();
 
     // Update existing rows
     rows.select("td:nth-child(2)").text(d => d.TotalFirms.toLocaleString());
@@ -57,12 +62,14 @@ function updateVisualization(data, selectedState) {
     newRows.append("td").text(d => d.NAICS_Description);
     newRows.append("td").text(d => d.TotalFirms.toLocaleString());
 
-    // Remove old rows
-    rows.exit().remove();
+    // Sort the table rows based on NAICS Description
+    tableBody.selectAll("tr")
+        .sort((a, b) => d3.descending(a.TotalFirms, b.TotalFirms));
 
     // Update the bar chart
     updateBarChart(naicsArray);
 }
+
 
 // Declare the svg variable outside the function to keep track of the existing SVG
 let svg;
