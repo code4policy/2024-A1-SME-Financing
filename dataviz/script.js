@@ -1,12 +1,12 @@
 // Load the CSV data
-d3.csv("Data_Sheet.csv").then(function(data) {
+d3.csv("us_state_2digitnaics_2021.csv").then(function(data) {
     // Group data by NAICS code and calculate total firms
-       const naicsData = d3.rollup(data, v => d3.sum(v, d => +d.Firms.replace(/,/g, '')), d => d["NAICS_Sector"]);
+       const naicsData = d3.rollup(data, v => d3.sum(v, d => +d.Firms.replace(/,/g, '')), d => d["NAICS_Description"]);
     // Convert the grouped data to an array of objects
-    const naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Sector: key, TotalFirms: value }));
+    const naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Description: key, TotalFirms: value }));
 
     // Sort the data by NAICS Description
-    naicsArray.sort((a, b) => a.NAICS_Sector.localeCompare(b.NAICS_Sector));
+    naicsArray.sort((a, b) => a.NAICS_Description.localeCompare(b.NAICS_Description));
 
     // Select the table body
     const tableBody = d3.select("tbody");
@@ -18,7 +18,7 @@ d3.csv("Data_Sheet.csv").then(function(data) {
         .append("tr");
 
     // Append cells for NAICS code and Total Firms
-    rows.append("td").text(d => d.NAICS_Sector);
+    rows.append("td").text(d => d.NAICS_Description);
     rows.append("td").text(d => d.TotalFirms.toLocaleString());
 
     
@@ -34,7 +34,7 @@ d3.csv("Data_Sheet.csv").then(function(data) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     const x = d3.scaleBand()
-        .domain(naicsArray.map(d => d.NAICS_Sector))
+        .domain(naicsArray.map(d => d.NAICS_Description))
         .range([0, width])
         .padding(0.1);
 
@@ -48,9 +48,9 @@ d3.csv("Data_Sheet.csv").then(function(data) {
         .data(naicsArray)
         .enter()
         .append("rect")
-        .attr("x", d => x(d.NAICS_Sector) + 5) // Add space between bars
+        .attr("x", d => x(d.NAICS_Description) + 5) // Add space between bars
         .attr("y", d => y(d.TotalFirms))
-        .attr("width", x.bandwidth() - 10) // Reduce bar thickness
+        .attr("width", x.bandwidth() - 5) // Reduce bar thickness
         .attr("height", d => height - y(d.TotalFirms))
         .attr("fill", "steelblue");
 
