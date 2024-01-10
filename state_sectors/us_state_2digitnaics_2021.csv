@@ -1,0 +1,1039 @@
+﻿State,State_Name,NAICS,NAICS_Description,Enterprise_Size,Firms,Establishments,Employment,Employment_Noise_Flag,"Annual_Payroll_($1,000)",Annual_Payroll_Noise_Flag
+00,United States,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,22587,23308,165688,G,8519646,G
+00,United States,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,17105,23048,474877,G,47530668,G
+00,United States,22,Utilities,01: Total,6502,19896,633738,G,74801007,G
+00,United States,23,Construction,01: Total,764546,780257,7062022,G,489514844,G
+00,United States,31-33,Manufacturing,01: Total,238851,283015,11710424,G,785195521,G
+00,United States,42,Wholesale Trade,01: Total,280576,390842,5925945,G,497749720,G
+00,United States,44-45,Retail Trade,01: Total,645750,1036879,15530630,G,541353646,G
+00,United States,48-49,Transportation and Warehousing,01: Total,224834,279148,5693641,G,316774053,G
+00,United States,51,Information,01: Total,88127,162006,3414629,G,505721716,G
+00,United States,52,Finance and Insurance,01: Total,245357,478891,6738309,G,824873393,G
+00,United States,53,Real Estate and Rental and Leasing,01: Total,357176,456226,2180602,G,145598850,G
+00,United States,54,"Professional, Scientific, and Technical Services",01: Total,860202,962470,9531475,G,981361328,G
+00,United States,55,Management of Companies and Enterprises,01: Total,25861,52072,3484154,G,434565104,G
+00,United States,56,Administrative and Support and Waste Management and Remediation Services,01: Total,370104,447474,12509600,G,672851459,G
+00,United States,61,Educational Services,01: Total,100207,111543,3488028,G,167086654,G
+00,United States,62,Health Care and Social Assistance,01: Total,682704,947570,20681593,G,1188600694,G
+00,United States,71,"Arts, Entertainment, and Recreation",01: Total,142713,156145,1858669,G,90767876,G
+00,United States,72,Accommodation and Food Services,01: Total,557340,745930,12142327,G,298821121,G
+00,United States,81,Other Services (except Public Administration),01: Total,717367,781446,5105104,G,206324691,G
+00,United States,99,Industries not classified,01: Total,10440,10440,14844,H,561956,G
+01,Alabama,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,774,792,6548,G,322362,G
+01,Alabama,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,149,202,5015,G,380293,G
+01,Alabama,22,Utilities,01: Total,107,349,14062,H,1709586,J
+01,Alabama,23,Construction,01: Total,8277,8434,94890,G,5675218,G
+01,Alabama,31-33,Manufacturing,01: Total,3704,4138,255924,G,15133675,G
+01,Alabama,42,Wholesale Trade,01: Total,3708,5003,73619,G,4909696,G
+01,Alabama,44-45,Retail Trade,01: Total,10776,17661,228506,G,7203839,G
+01,Alabama,48-49,Transportation and Warehousing,01: Total,2930,3525,72266,G,3705626,G
+01,Alabama,51,Information,01: Total,867,1909,27332,H,1914569,G
+01,Alabama,52,Finance and Insurance,01: Total,3162,7308,71612,H,6268542,G
+01,Alabama,53,Real Estate and Rental and Leasing,01: Total,3711,4940,23694,G,1282463,G
+01,Alabama,54,"Professional, Scientific, and Technical Services",01: Total,8609,9662,113316,G,9446651,G
+01,Alabama,55,Management of Companies and Enterprises,01: Total,424,583,21571,G,2173054,G
+01,Alabama,56,Administrative and Support and Waste Management and Remediation Services,01: Total,4198,5042,166697,G,5975479,G
+01,Alabama,61,Educational Services,01: Total,894,940,22987,G,801654,G
+01,Alabama,62,Health Care and Social Assistance,01: Total,7909,10885,257286,G,13876917,G
+01,Alabama,71,"Arts, Entertainment, and Recreation",01: Total,1175,1277,17109,G,395875,G
+01,Alabama,72,Accommodation and Food Services,01: Total,6564,9563,172184,G,3290802,G
+01,Alabama,81,Other Services (except Public Administration),01: Total,10492,11172,74333,G,2450165,G
+01,Alabama,99,Industries not classified,01: Total,129,129,163,J,4739,G
+02,Alaska,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,494,500,563,J,50780,G
+02,Alaska,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,132,161,8769,G,1219733,G
+02,Alaska,22,Utilities,01: Total,65,114,2345,G,249382,G
+02,Alaska,23,Construction,01: Total,2515,2580,15750,G,1452675,G
+02,Alaska,31-33,Manufacturing,01: Total,488,564,10728,H,729590,H
+02,Alaska,42,Wholesale Trade,01: Total,509,722,8169,H,548985,G
+02,Alaska,44-45,Retail Trade,01: Total,1777,2397,33449,G,1241873,G
+02,Alaska,48-49,Transportation and Warehousing,01: Total,947,1197,18165,G,1618334,H
+02,Alaska,51,Information,01: Total,204,413,6334,H,503024,H
+02,Alaska,52,Finance and Insurance,01: Total,435,787,6971,G,627219,G
+02,Alaska,53,Real Estate and Rental and Leasing,01: Total,981,1092,4396,G,247366,G
+02,Alaska,54,"Professional, Scientific, and Technical Services",01: Total,1721,1966,19304,G,1566498,G
+02,Alaska,55,Management of Companies and Enterprises,01: Total,122,166,4523,G,666468,H
+02,Alaska,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1029,1223,20157,G,1058577,G
+02,Alaska,61,Educational Services,01: Total,258,294,2695,G,94092,G
+02,Alaska,62,Health Care and Social Assistance,01: Total,2246,2791,52488,G,3487629,G
+02,Alaska,71,"Arts, Entertainment, and Recreation",01: Total,568,596,3671,G,107254,G
+02,Alaska,72,Accommodation and Food Services,01: Total,1867,2158,23404,G,765828,G
+02,Alaska,81,Other Services (except Public Administration),01: Total,1758,1891,9180,G,403053,G
+02,Alaska,99,Industries not classified,01: Total,29,29,32,J,1014,G
+04,Arizona,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,229,234,2621,G,95164,G
+04,Arizona,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,155,208,12514,H,967667,H
+04,Arizona,22,Utilities,01: Total,163,295,12635,J,1384655,J
+04,Arizona,23,Construction,01: Total,14074,14289,184434,G,11705375,G
+04,Arizona,31-33,Manufacturing,01: Total,4052,4336,157582,G,12005082,G
+04,Arizona,42,Wholesale Trade,01: Total,5222,6487,98010,G,7816863,G
+04,Arizona,44-45,Retail Trade,01: Total,10104,17541,342612,G,12950005,G
+04,Arizona,48-49,Transportation and Warehousing,01: Total,3543,4149,111124,G,6036693,G
+04,Arizona,51,Information,01: Total,1614,2695,51131,G,4571656,G
+04,Arizona,52,Finance and Insurance,01: Total,5834,10030,185953,G,16855172,G
+04,Arizona,53,Real Estate and Rental and Leasing,01: Total,10192,12239,54508,G,3871347,G
+04,Arizona,54,"Professional, Scientific, and Technical Services",01: Total,18447,19975,167644,G,14377208,G
+04,Arizona,55,Management of Companies and Enterprises,01: Total,624,929,61918,H,5434484,H
+04,Arizona,56,Administrative and Support and Waste Management and Remediation Services,01: Total,8055,9341,279344,G,11724979,G
+04,Arizona,61,Educational Services,01: Total,2120,2348,67688,G,2949774,G
+04,Arizona,62,Health Care and Social Assistance,01: Total,15341,20587,396313,G,22463762,G
+04,Arizona,71,"Arts, Entertainment, and Recreation",01: Total,2002,2368,44183,G,1847543,G
+04,Arizona,72,Accommodation and Food Services,01: Total,9510,13896,280161,G,7065430,G
+04,Arizona,81,Other Services (except Public Administration),01: Total,11427,12634,90780,G,3593952,G
+04,Arizona,99,Industries not classified,01: Total,178,178,327,H,10868,G
+05,Arkansas,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,631,649,4727,G,234076,G
+05,Arkansas,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,242,271,3243,G,213146,G
+05,Arkansas,22,Utilities,01: Total,139,333,7811,H,766418,G
+05,Arkansas,23,Construction,01: Total,5875,5939,51809,G,2800268,G
+05,Arkansas,31-33,Manufacturing,01: Total,2219,2516,158437,G,8538585,G
+05,Arkansas,42,Wholesale Trade,01: Total,2413,3247,46567,G,2934938,G
+05,Arkansas,44-45,Retail Trade,01: Total,6572,10469,139318,G,4549812,G
+05,Arkansas,48-49,Transportation and Warehousing,01: Total,2126,2602,58519,G,3198229,G
+05,Arkansas,51,Information,01: Total,579,1198,20423,G,1467581,G
+05,Arkansas,52,Finance and Insurance,01: Total,2540,4649,40543,G,3173441,G
+05,Arkansas,53,Real Estate and Rental and Leasing,01: Total,2822,3488,13270,G,590334,G
+05,Arkansas,54,"Professional, Scientific, and Technical Services",01: Total,5630,6109,37452,G,2434523,G
+05,Arkansas,55,Management of Companies and Enterprises,01: Total,286,1044,36404,J,4479066,J
+05,Arkansas,56,Administrative and Support and Waste Management and Remediation Services,01: Total,2520,3054,65992,G,2302007,G
+05,Arkansas,61,Educational Services,01: Total,623,662,15275,G,463524,G
+05,Arkansas,62,Health Care and Social Assistance,01: Total,6050,8418,178965,G,9505970,G
+05,Arkansas,71,"Arts, Entertainment, and Recreation",01: Total,791,851,8703,G,251339,G
+05,Arkansas,72,Accommodation and Food Services,01: Total,4678,6208,102795,G,2027370,G
+05,Arkansas,81,Other Services (except Public Administration),01: Total,6414,6771,39329,G,1243881,G
+05,Arkansas,99,Industries not classified,01: Total,94,94,121,H,2903,G
+06,California,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,2051,2097,30343,G,1602917,G
+06,California,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,470,635,15375,G,1621020,G
+06,California,22,Utilities,01: Total,654,1354,62630,J,8996137,J
+06,California,23,Construction,01: Total,81549,82744,844489,G,64827933,G
+06,California,31-33,Manufacturing,01: Total,33323,35874,1121805,G,98580428,G
+06,California,42,Wholesale Trade,01: Total,48112,56523,781395,G,79900948,G
+06,California,44-45,Retail Trade,01: Total,70677,105805,1634401,G,66976905,G
+06,California,48-49,Transportation and Warehousing,01: Total,29729,34270,688325,G,44051260,G
+06,California,51,Information,01: Total,20806,28343,733292,G,185385081,G
+06,California,52,Finance and Insurance,01: Total,30937,51823,643425,G,102586844,G
+06,California,53,Real Estate and Rental and Leasing,01: Total,51485,63632,299695,G,23395908,G
+06,California,54,"Professional, Scientific, and Technical Services",01: Total,131220,140763,1328705,G,178159340,G
+06,California,55,Management of Companies and Enterprises,01: Total,2948,4996,357286,G,68393683,H
+06,California,56,Administrative and Support and Waste Management and Remediation Services,01: Total,40857,47998,1604852,G,116777432,G
+06,California,61,Educational Services,01: Total,14740,16309,395279,G,21669730,G
+06,California,62,Health Care and Social Assistance,01: Total,100160,122291,2125667,G,147936047,G
+06,California,71,"Arts, Entertainment, and Recreation",01: Total,30635,32340,239159,G,19346967,G
+06,California,72,Accommodation and Food Services,01: Total,69020,90848,1401182,G,42087916,G
+06,California,81,Other Services (except Public Administration),01: Total,72010,78825,526259,G,23797260,G
+06,California,99,Industries not classified,01: Total,1112,1112,1796,G,72756,G
+08,Colorado,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,352,352,1983,G,87939,G
+08,Colorado,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,878,1000,18613,G,2259114,G
+08,Colorado,22,Utilities,01: Total,222,438,9459,J,1086347,H
+08,Colorado,23,Construction,01: Total,20094,20299,178752,G,12703668,G
+08,Colorado,31-33,Manufacturing,01: Total,4857,5114,127769,G,9108214,G
+08,Colorado,42,Wholesale Trade,01: Total,5698,7064,101957,G,9978972,G
+08,Colorado,44-45,Retail Trade,01: Total,12386,18590,285291,G,10375199,G
+08,Colorado,48-49,Transportation and Warehousing,01: Total,3757,4338,92964,G,5513676,G
+08,Colorado,51,Information,01: Total,2410,3910,90687,G,12095673,G
+08,Colorado,52,Finance and Insurance,01: Total,6849,10926,127407,G,13188303,G
+08,Colorado,53,Real Estate and Rental and Leasing,01: Total,12433,14284,51008,G,3375587,G
+08,Colorado,54,"Professional, Scientific, and Technical Services",01: Total,26280,28084,222556,G,22803260,G
+08,Colorado,55,Management of Companies and Enterprises,01: Total,659,988,53440,G,6802237,G
+08,Colorado,56,Administrative and Support and Waste Management and Remediation Services,01: Total,8661,9853,269240,G,16116813,H
+08,Colorado,61,Educational Services,01: Total,2708,2906,53015,G,2282933,G
+08,Colorado,62,Health Care and Social Assistance,01: Total,14325,18038,328770,G,19321446,G
+08,Colorado,71,"Arts, Entertainment, and Recreation",01: Total,3201,3370,46164,G,2331809,G
+08,Colorado,72,Accommodation and Food Services,01: Total,11026,14670,251676,G,7111151,G
+08,Colorado,81,Other Services (except Public Administration),01: Total,14321,15449,105568,G,4537264,G
+08,Colorado,99,Industries not classified,01: Total,154,154,313,H,13144,H
+09,Connecticut,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,80,80,329,G,14596,H
+09,Connecticut,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,41,64,606,G,47815,G
+09,Connecticut,22,Utilities,01: Total,54,143,7559,J,1012409,J
+09,Connecticut,23,Construction,01: Total,7945,7990,57374,G,4553370,G
+09,Connecticut,31-33,Manufacturing,01: Total,3587,3776,151080,G,12530679,G
+09,Connecticut,42,Wholesale Trade,01: Total,3246,3829,65471,G,6221613,G
+09,Connecticut,44-45,Retail Trade,01: Total,8012,11612,172793,G,6388815,G
+09,Connecticut,48-49,Transportation and Warehousing,01: Total,1489,1841,49641,G,2441331,G
+09,Connecticut,51,Information,01: Total,1064,1776,35013,G,4493722,G
+09,Connecticut,52,Finance and Insurance,01: Total,3236,5771,111291,G,18625606,G
+09,Connecticut,53,Real Estate and Rental and Leasing,01: Total,2513,3356,20115,G,1371403,G
+09,Connecticut,54,"Professional, Scientific, and Technical Services",01: Total,8348,9057,106826,G,11858486,G
+09,Connecticut,55,Management of Companies and Enterprises,01: Total,438,683,35007,G,4460453,G
+09,Connecticut,56,Administrative and Support and Waste Management and Remediation Services,01: Total,4926,5560,83274,G,4702555,G
+09,Connecticut,61,Educational Services,01: Total,1379,1476,73246,G,4224955,H
+09,Connecticut,62,Health Care and Social Assistance,01: Total,7202,11600,283886,G,16791181,G
+09,Connecticut,71,"Arts, Entertainment, and Recreation",01: Total,1623,1796,20280,G,765458,G
+09,Connecticut,72,Accommodation and Food Services,01: Total,7352,8789,116326,G,3251546,G
+09,Connecticut,81,Other Services (except Public Administration),01: Total,8690,9219,51956,G,2119203,G
+09,Connecticut,99,Industries not classified,01: Total,91,91,131,H,6767,G
+10,Delaware,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,37,38,135,G,7485,G
+10,Delaware,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,21,23,352,H,38281,H
+10,Delaware,22,Utilities,01: Total,29,80,2512,H,312564,H
+10,Delaware,23,Construction,01: Total,2431,2449,23209,G,1503347,G
+10,Delaware,31-33,Manufacturing,01: Total,580,602,28071,G,1854607,G
+10,Delaware,42,Wholesale Trade,01: Total,1120,1263,18441,H,2077218,H
+10,Delaware,44-45,Retail Trade,01: Total,2591,3732,53372,G,1769871,G
+10,Delaware,48-49,Transportation and Warehousing,01: Total,779,853,19701,H,856026,H
+10,Delaware,51,Information,01: Total,641,861,6325,G,683533,G
+10,Delaware,52,Finance and Insurance,01: Total,1273,2037,41812,G,4613107,G
+10,Delaware,53,Real Estate and Rental and Leasing,01: Total,1199,1412,6366,G,373098,G
+10,Delaware,54,"Professional, Scientific, and Technical Services",01: Total,3654,3838,32854,G,3969709,G
+10,Delaware,55,Management of Companies and Enterprises,01: Total,469,563,6579,G,784020,G
+10,Delaware,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1541,1733,31897,G,1450109,G
+10,Delaware,61,Educational Services,01: Total,354,366,6082,G,277683,G
+10,Delaware,62,Health Care and Social Assistance,01: Total,2403,3280,71861,G,4520041,G
+10,Delaware,71,"Arts, Entertainment, and Recreation",01: Total,512,539,7430,G,267845,G
+10,Delaware,72,Accommodation and Food Services,01: Total,1923,2314,37200,G,914630,G
+10,Delaware,81,Other Services (except Public Administration),01: Total,2278,2375,14260,G,535030,G
+10,Delaware,99,Industries not classified,01: Total,195,195,255,J,9446,G
+11,District of Columbia,22,Utilities,01: Total,38,76,2061,H,320388,H
+11,District of Columbia,23,Construction,01: Total,528,530,10291,G,782096,G
+11,District of Columbia,31-33,Manufacturing,01: Total,102,108,950,G,52208,G
+11,District of Columbia,42,Wholesale Trade,01: Total,321,393,2975,G,334857,G
+11,District of Columbia,44-45,Retail Trade,01: Total,1333,1664,20265,G,730980,G
+11,District of Columbia,48-49,Transportation and Warehousing,01: Total,160,176,3042,H,464687,J
+11,District of Columbia,51,Information,01: Total,615,870,26516,G,3817698,G
+11,District of Columbia,52,Finance and Insurance,01: Total,582,1117,19815,H,3741273,H
+11,District of Columbia,53,Real Estate and Rental and Leasing,01: Total,912,1475,10977,G,1019586,G
+11,District of Columbia,54,"Professional, Scientific, and Technical Services",01: Total,5139,5993,105712,G,16385276,G
+11,District of Columbia,55,Management of Companies and Enterprises,01: Total,154,200,10924,J,1286307,H
+11,District of Columbia,56,Administrative and Support and Waste Management and Remediation Services,01: Total,802,1121,27709,G,1673505,G
+11,District of Columbia,61,Educational Services,01: Total,614,678,50855,G,3353362,G
+11,District of Columbia,62,Health Care and Social Assistance,01: Total,1825,2257,70195,G,5023790,G
+11,District of Columbia,71,"Arts, Entertainment, and Recreation",01: Total,379,435,5843,G,732851,G
+11,District of Columbia,72,Accommodation and Food Services,01: Total,2008,2685,44134,G,1734764,G
+11,District of Columbia,81,Other Services (except Public Administration),01: Total,3801,4275,70990,G,7402794,G
+11,District of Columbia,99,Industries not classified,01: Total,32,32,44,G,1699,G
+12,Florida,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,1150,1168,7557,G,303638,G
+12,Florida,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,182,219,3777,G,292747,G
+12,Florida,22,Utilities,01: Total,408,910,28562,G,3286514,H
+12,Florida,23,Construction,01: Total,62301,63119,499668,G,28194687,G
+12,Florida,31-33,Manufacturing,01: Total,12621,13555,327402,G,20187891,G
+12,Florida,42,Wholesale Trade,01: Total,26297,30850,334097,G,23697248,G
+12,Florida,44-45,Retail Trade,01: Total,49750,75295,1090804,G,37705341,G
+12,Florida,48-49,Transportation and Warehousing,01: Total,17749,19941,322006,G,16983812,G
+12,Florida,51,Information,01: Total,6244,10255,162422,G,16503772,G
+12,Florida,52,Finance and Insurance,01: Total,21324,35237,403707,G,40773918,G
+12,Florida,53,Real Estate and Rental and Leasing,01: Total,37819,45269,187875,G,10776452,G
+12,Florida,54,"Professional, Scientific, and Technical Services",01: Total,84370,89886,574945,G,47812622,G
+12,Florida,55,Management of Companies and Enterprises,01: Total,1724,2897,163684,G,16126583,G
+12,Florida,56,Administrative and Support and Waste Management and Remediation Services,01: Total,37398,41644,1992122,G,110736572,G
+12,Florida,61,Educational Services,01: Total,7551,8084,169883,G,7809323,G
+12,Florida,62,Health Care and Social Assistance,01: Total,53531,68842,1191479,G,69159907,G
+12,Florida,71,"Arts, Entertainment, and Recreation",01: Total,9447,10175,196831,G,7852965,G
+12,Florida,72,Accommodation and Food Services,01: Total,34285,45827,898481,G,22595769,G
+12,Florida,81,Other Services (except Public Administration),01: Total,49303,53005,321090,G,11509979,G
+12,Florida,99,Industries not classified,01: Total,783,783,997,G,45953,G
+13,Georgia,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,925,953,7799,G,380059,G
+13,Georgia,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,108,183,5086,H,377079,H
+13,Georgia,22,Utilities,01: Total,166,594,22374,H,2456320,H
+13,Georgia,23,Construction,01: Total,20764,21028,201367,G,13284448,G
+13,Georgia,31-33,Manufacturing,01: Total,6730,7651,387941,G,22104661,G
+13,Georgia,42,Wholesale Trade,01: Total,10235,12636,206524,G,15906514,G
+13,Georgia,44-45,Retail Trade,01: Total,23155,35518,485471,G,15816493,G
+13,Georgia,48-49,Transportation and Warehousing,01: Total,7761,9318,245684,G,14187509,G
+13,Georgia,51,Information,01: Total,3050,5182,115131,G,13414798,G
+13,Georgia,52,Finance and Insurance,01: Total,8497,15228,189705,G,20132323,G
+13,Georgia,53,Real Estate and Rental and Leasing,01: Total,11682,14777,70550,G,5682508,G
+13,Georgia,54,"Professional, Scientific, and Technical Services",01: Total,29912,32004,308804,G,28444560,G
+13,Georgia,55,Management of Companies and Enterprises,01: Total,1011,1698,129784,G,15128079,G
+13,Georgia,56,Administrative and Support and Waste Management and Remediation Services,01: Total,11969,14340,414363,G,19870155,G
+13,Georgia,61,Educational Services,01: Total,3116,3383,83475,G,4105347,H
+13,Georgia,62,Health Care and Social Assistance,01: Total,20715,27853,542200,G,31153831,G
+13,Georgia,71,"Arts, Entertainment, and Recreation",01: Total,3758,4066,47835,G,2093183,G
+13,Georgia,72,Accommodation and Food Services,01: Total,17059,23148,416953,G,8587883,G
+13,Georgia,81,Other Services (except Public Administration),01: Total,22027,23608,152509,G,5674475,G
+13,Georgia,99,Industries not classified,01: Total,561,561,754,G,30852,G
+15,Hawaii,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,43,43,201,H,9857,G
+15,Hawaii,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,6,6,145,J,10470,H
+15,Hawaii,22,Utilities,01: Total,37,78,3558,H,395267,H
+15,Hawaii,23,Construction,01: Total,2890,2944,30890,G,2435642,G
+15,Hawaii,31-33,Manufacturing,01: Total,711,735,10719,G,516577,G
+15,Hawaii,42,Wholesale Trade,01: Total,1205,1460,16324,G,999789,G
+15,Hawaii,44-45,Retail Trade,01: Total,2582,4384,61474,G,2272324,G
+15,Hawaii,48-49,Transportation and Warehousing,01: Total,753,953,25832,G,1495111,G
+15,Hawaii,51,Information,01: Total,333,582,6285,G,486601,G
+15,Hawaii,52,Finance and Insurance,01: Total,817,1541,20627,G,1771542,G
+15,Hawaii,53,Real Estate and Rental and Leasing,01: Total,1667,2040,11467,G,749542,G
+15,Hawaii,54,"Professional, Scientific, and Technical Services",01: Total,3053,3414,23313,G,1803330,G
+15,Hawaii,55,Management of Companies and Enterprises,01: Total,174,230,7033,G,634415,G
+15,Hawaii,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1603,1845,58599,H,2713810,H
+15,Hawaii,61,Educational Services,01: Total,516,557,14836,G,691330,G
+15,Hawaii,62,Health Care and Social Assistance,01: Total,2886,3746,71022,G,4622599,G
+15,Hawaii,71,"Arts, Entertainment, and Recreation",01: Total,502,538,7619,G,300739,G
+15,Hawaii,72,Accommodation and Food Services,01: Total,2981,3799,78153,G,2794001,G
+15,Hawaii,81,Other Services (except Public Administration),01: Total,3172,3552,21016,G,807924,G
+15,Hawaii,99,Industries not classified,01: Total,41,41,66,G,3053,G
+16,Idaho,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,512,513,3976,G,171954,G
+16,Idaho,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,104,110,2318,G,176768,G
+16,Idaho,22,Utilities,01: Total,129,219,3933,J,404598,J
+16,Idaho,23,Construction,01: Total,9272,9311,54863,G,2978588,G
+16,Idaho,31-33,Manufacturing,01: Total,1933,2025,66128,G,4234736,H
+16,Idaho,42,Wholesale Trade,01: Total,1635,2183,31939,G,2474017,G
+16,Idaho,44-45,Retail Trade,01: Total,4262,6176,90164,G,3191301,G
+16,Idaho,48-49,Transportation and Warehousing,01: Total,1879,2051,22872,G,1052498,G
+16,Idaho,51,Information,01: Total,551,871,15932,G,1429729,G
+16,Idaho,52,Finance and Insurance,01: Total,1772,3127,24146,G,1905563,G
+16,Idaho,53,Real Estate and Rental and Leasing,01: Total,3273,3599,10472,G,537153,G
+16,Idaho,54,"Professional, Scientific, and Technical Services",01: Total,5081,5432,39612,G,2883885,G
+16,Idaho,55,Management of Companies and Enterprises,01: Total,205,243,8229,G,882627,H
+16,Idaho,56,Administrative and Support and Waste Management and Remediation Services,01: Total,2901,3105,45437,G,1915099,G
+16,Idaho,61,Educational Services,01: Total,605,630,17053,H,459016,G
+16,Idaho,62,Health Care and Social Assistance,01: Total,5045,6108,106729,G,5548408,G
+16,Idaho,71,"Arts, Entertainment, and Recreation",01: Total,889,913,9352,G,231510,G
+16,Idaho,72,Accommodation and Food Services,01: Total,3353,4205,70057,G,1404736,G
+16,Idaho,81,Other Services (except Public Administration),01: Total,3768,3972,21981,G,768004,G
+16,Idaho,99,Industries not classified,01: Total,71,71,46,G,2067,G
+17,Illinois,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,305,327,1827,G,93349,G
+17,Illinois,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,362,449,5632,G,446952,G
+17,Illinois,22,Utilities,01: Total,193,681,27867,G,3504546,H
+17,Illinois,23,Construction,01: Total,29215,29474,211863,G,17304072,G
+17,Illinois,31-33,Manufacturing,01: Total,11344,12451,518514,G,35783398,G
+17,Illinois,42,Wholesale Trade,01: Total,13337,16671,309607,G,27902406,G
+17,Illinois,44-45,Retail Trade,01: Total,22412,36105,571707,G,19048541,G
+17,Illinois,48-49,Transportation and Warehousing,01: Total,17984,19780,300449,G,16705477,G
+17,Illinois,51,Information,01: Total,3322,5776,110510,G,12995338,G
+17,Illinois,52,Finance and Insurance,01: Total,11921,20434,355217,G,44705010,G
+17,Illinois,53,Real Estate and Rental and Leasing,01: Total,11131,14036,77384,G,5709333,G
+17,Illinois,54,"Professional, Scientific, and Technical Services",01: Total,35889,38314,417366,G,45503413,G
+17,Illinois,55,Management of Companies and Enterprises,01: Total,1374,2265,209764,G,26420805,G
+17,Illinois,56,Administrative and Support and Waste Management and Remediation Services,01: Total,14854,17317,479769,G,22906910,G
+17,Illinois,61,Educational Services,01: Total,4037,4373,157019,G,7810602,G
+17,Illinois,62,Health Care and Social Assistance,01: Total,25640,35336,799232,G,43766159,G
+17,Illinois,71,"Arts, Entertainment, and Recreation",01: Total,4847,5461,64473,G,3081343,G
+17,Illinois,72,Accommodation and Food Services,01: Total,22430,29030,431303,G,10595410,G
+17,Illinois,81,Other Services (except Public Administration),01: Total,30148,32267,221028,G,9992327,G
+17,Illinois,99,Industries not classified,01: Total,248,248,340,G,11427,G
+18,Indiana,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,274,285,1389,G,71263,G
+18,Indiana,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,142,257,4707,G,358860,G
+18,Indiana,22,Utilities,01: Total,190,535,14793,H,1514855,G
+18,Indiana,23,Construction,01: Total,14164,14358,145974,G,9877297,G
+18,Indiana,31-33,Manufacturing,01: Total,6859,7848,509216,G,31295866,G
+18,Indiana,42,Wholesale Trade,01: Total,5552,7298,119825,G,8811200,G
+18,Indiana,44-45,Retail Trade,01: Total,11932,20821,330384,G,10535037,G
+18,Indiana,48-49,Transportation and Warehousing,01: Total,5252,6149,140873,G,7036791,G
+18,Indiana,51,Information,01: Total,1142,2370,39324,G,3633038,G
+18,Indiana,52,Finance and Insurance,01: Total,4881,9501,108524,G,9084652,G
+18,Indiana,53,Real Estate and Rental and Leasing,01: Total,5457,7320,35837,G,2078236,G
+18,Indiana,54,"Professional, Scientific, and Technical Services",01: Total,12035,13166,134676,G,11305508,G
+18,Indiana,55,Management of Companies and Enterprises,01: Total,578,851,53470,G,5530575,G
+18,Indiana,56,Administrative and Support and Waste Management and Remediation Services,01: Total,6708,8062,207354,G,8028019,G
+18,Indiana,61,Educational Services,01: Total,1585,1663,60794,G,2119915,G
+18,Indiana,62,Health Care and Social Assistance,01: Total,10437,17440,441503,G,23533737,G
+18,Indiana,71,"Arts, Entertainment, and Recreation",01: Total,2124,2255,31786,G,1247998,G
+18,Indiana,72,Accommodation and Food Services,01: Total,9875,14025,255575,G,5072429,G
+18,Indiana,81,Other Services (except Public Administration),01: Total,15107,16597,118453,G,3999842,G
+18,Indiana,99,Industries not classified,01: Total,111,111,119,G,4599,G
+19,Iowa,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,337,378,2516,H,160846,H
+19,Iowa,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,57,169,2099,G,137255,H
+19,Iowa,22,Utilities,01: Total,88,393,7477,H,769146,H
+19,Iowa,23,Construction,01: Total,8823,8946,67590,G,4640815,G
+19,Iowa,31-33,Manufacturing,01: Total,2881,3420,215771,G,13574999,G
+19,Iowa,42,Wholesale Trade,01: Total,3128,4781,67488,G,4373788,G
+19,Iowa,44-45,Retail Trade,01: Total,6713,11062,186113,G,5337598,G
+19,Iowa,48-49,Transportation and Warehousing,01: Total,3512,4025,65901,G,3309608,G
+19,Iowa,51,Information,01: Total,874,1592,30877,G,1906481,G
+19,Iowa,52,Finance and Insurance,01: Total,3481,5970,94207,G,8363901,G
+19,Iowa,53,Real Estate and Rental and Leasing,01: Total,2916,3518,14581,G,738748,G
+19,Iowa,54,"Professional, Scientific, and Technical Services",01: Total,5883,6488,60642,G,4361261,G
+19,Iowa,55,Management of Companies and Enterprises,01: Total,389,505,24538,G,2226774,G
+19,Iowa,56,Administrative and Support and Waste Management and Remediation Services,01: Total,3501,4057,96028,H,3836104,H
+19,Iowa,61,Educational Services,01: Total,744,820,31218,G,986141,G
+19,Iowa,62,Health Care and Social Assistance,01: Total,5691,8909,214770,G,10813528,G
+19,Iowa,71,"Arts, Entertainment, and Recreation",01: Total,1407,1465,13969,G,323026,G
+19,Iowa,72,Accommodation and Food Services,01: Total,5775,7245,108565,G,2132541,G
+19,Iowa,81,Other Services (except Public Administration),01: Total,8639,9181,47723,G,1572818,G
+19,Iowa,99,Industries not classified,01: Total,73,73,73,G,1900,G
+20,Kansas,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,189,190,946,G,47343,G
+20,Kansas,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,765,807,5094,G,315891,G
+20,Kansas,22,Utilities,01: Total,74,257,7382,G,809890,H
+20,Kansas,23,Construction,01: Total,7194,7281,69246,G,4194374,G
+20,Kansas,31-33,Manufacturing,01: Total,2411,2673,161437,G,10380927,G
+20,Kansas,42,Wholesale Trade,01: Total,2901,4196,60747,G,4378134,G
+20,Kansas,44-45,Retail Trade,01: Total,6217,9547,143852,G,4365233,G
+20,Kansas,48-49,Transportation and Warehousing,01: Total,2222,2702,64704,G,3128690,G
+20,Kansas,51,Information,01: Total,769,1459,23291,G,1954703,H
+20,Kansas,52,Finance and Insurance,01: Total,3530,5933,67424,G,5886776,G
+20,Kansas,53,Real Estate and Rental and Leasing,01: Total,2882,3571,14788,G,712055,G
+20,Kansas,54,"Professional, Scientific, and Technical Services",01: Total,6493,7159,69169,G,5346589,G
+20,Kansas,55,Management of Companies and Enterprises,01: Total,423,614,23861,G,2704009,G
+20,Kansas,56,Administrative and Support and Waste Management and Remediation Services,01: Total,3446,3949,92953,G,4051345,G
+20,Kansas,61,Educational Services,01: Total,712,751,20479,G,660290,G
+20,Kansas,62,Health Care and Social Assistance,01: Total,5916,8486,191385,G,9768614,G
+20,Kansas,71,"Arts, Entertainment, and Recreation",01: Total,982,1062,13926,G,334088,G
+20,Kansas,72,Accommodation and Food Services,01: Total,4581,6409,110604,G,2164914,G
+20,Kansas,81,Other Services (except Public Administration),01: Total,7455,7926,47048,G,1533601,G
+20,Kansas,99,Industries not classified,01: Total,85,85,96,H,2551,G
+21,Kentucky,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,246,246,1356,G,60596,G
+21,Kentucky,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,252,310,7003,G,521336,H
+21,Kentucky,22,Utilities,01: Total,84,346,8126,H,814787,H
+21,Kentucky,23,Construction,01: Total,7643,7759,75678,G,4541540,G
+21,Kentucky,31-33,Manufacturing,01: Total,3152,3621,247425,G,14376906,G
+21,Kentucky,42,Wholesale Trade,01: Total,2991,3974,68885,G,4646369,G
+21,Kentucky,44-45,Retail Trade,01: Total,8915,14773,213947,G,6685335,G
+21,Kentucky,48-49,Transportation and Warehousing,01: Total,2421,3080,122250,G,6676404,H
+21,Kentucky,51,Information,01: Total,793,1862,27201,H,1459795,H
+21,Kentucky,52,Finance and Insurance,01: Total,3116,6370,75343,G,6196164,G
+21,Kentucky,53,Real Estate and Rental and Leasing,01: Total,3384,4202,17347,G,875118,G
+21,Kentucky,54,"Professional, Scientific, and Technical Services",01: Total,7611,8252,75842,G,5147185,G
+21,Kentucky,55,Management of Companies and Enterprises,01: Total,421,671,41746,G,3784056,G
+21,Kentucky,56,Administrative and Support and Waste Management and Remediation Services,01: Total,3607,4411,115503,G,3909119,G
+21,Kentucky,61,Educational Services,01: Total,807,910,27912,G,935579,G
+21,Kentucky,62,Health Care and Social Assistance,01: Total,7613,12149,257483,G,14389615,G
+21,Kentucky,71,"Arts, Entertainment, and Recreation",01: Total,1232,1297,16806,G,478850,G
+21,Kentucky,72,Accommodation and Food Services,01: Total,5890,8386,157387,G,3035453,G
+21,Kentucky,81,Other Services (except Public Administration),01: Total,8631,9390,59625,G,1964207,G
+21,Kentucky,99,Industries not classified,01: Total,121,121,175,J,3639,G
+22,Louisiana,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,551,556,3621,G,195302,G
+22,Louisiana,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,1011,1256,29594,G,2704125,G
+22,Louisiana,22,Utilities,01: Total,213,521,11740,J,1236543,J
+22,Louisiana,23,Construction,01: Total,8442,8596,133463,G,8519852,G
+22,Louisiana,31-33,Manufacturing,01: Total,2672,3004,111931,G,8842739,G
+22,Louisiana,42,Wholesale Trade,01: Total,3764,5158,69077,G,4544763,G
+22,Louisiana,44-45,Retail Trade,01: Total,10008,15835,218520,G,6881324,G
+22,Louisiana,48-49,Transportation and Warehousing,01: Total,2986,3876,66482,G,4220436,G
+22,Louisiana,51,Information,01: Total,770,1576,18465,H,1220534,G
+22,Louisiana,52,Finance and Insurance,01: Total,3979,7511,64341,G,4912037,G
+22,Louisiana,53,Real Estate and Rental and Leasing,01: Total,4134,5437,27451,G,1496922,G
+22,Louisiana,54,"Professional, Scientific, and Technical Services",01: Total,11246,12371,97155,G,6910073,G
+22,Louisiana,55,Management of Companies and Enterprises,01: Total,471,627,25768,G,2412530,H
+22,Louisiana,56,Administrative and Support and Waste Management and Remediation Services,01: Total,4376,5184,103614,G,4622512,G
+22,Louisiana,61,Educational Services,01: Total,1194,1291,46108,G,1975662,G
+22,Louisiana,62,Health Care and Social Assistance,01: Total,9937,12908,292742,G,15219689,G
+22,Louisiana,71,"Arts, Entertainment, and Recreation",01: Total,1478,1649,20271,G,910863,H
+22,Louisiana,72,Accommodation and Food Services,01: Total,7671,10236,182944,G,3872029,G
+22,Louisiana,81,Other Services (except Public Administration),01: Total,9181,9744,69139,G,2457564,G
+22,Louisiana,99,Industries not classified,01: Total,128,128,239,G,7635,H
+23,Maine,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,989,998,3165,G,169521,G
+23,Maine,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,19,20,94,G,6719,G
+23,Maine,22,Utilities,01: Total,52,128,2438,H,215937,H
+23,Maine,23,Construction,01: Total,5524,5551,28403,G,1680224,G
+23,Maine,31-33,Manufacturing,01: Total,1617,1696,52551,G,3176650,G
+23,Maine,42,Wholesale Trade,01: Total,1221,1459,17421,G,1229643,G
+23,Maine,44-45,Retail Trade,01: Total,4114,6006,81690,G,2857206,G
+23,Maine,48-49,Transportation and Warehousing,01: Total,1140,1264,16306,G,795648,G
+23,Maine,51,Information,01: Total,545,828,9999,H,671126,G
+23,Maine,52,Finance and Insurance,01: Total,930,1926,29854,G,2472365,G
+23,Maine,53,Real Estate and Rental and Leasing,01: Total,1834,2045,7635,G,380789,G
+23,Maine,54,"Professional, Scientific, and Technical Services",01: Total,3397,3601,27526,G,2174034,G
+23,Maine,55,Management of Companies and Enterprises,01: Total,146,191,10679,H,1065321,H
+23,Maine,56,Administrative and Support and Waste Management and Remediation Services,01: Total,2225,2403,22516,G,911232,G
+23,Maine,61,Educational Services,01: Total,499,526,17175,G,676400,G
+23,Maine,62,Health Care and Social Assistance,01: Total,3141,4912,107206,G,6017608,G
+23,Maine,71,"Arts, Entertainment, and Recreation",01: Total,875,909,6434,G,213109,G
+23,Maine,72,Accommodation and Food Services,01: Total,3699,4244,45407,G,1466606,G
+23,Maine,81,Other Services (except Public Administration),01: Total,3577,3761,18163,G,675124,G
+23,Maine,99,Industries not classified,01: Total,51,51,48,H,1164,G
+24,Maryland,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,192,195,933,H,39828,G
+24,Maryland,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,36,55,902,G,63332,G
+24,Maryland,22,Utilities,01: Total,87,229,9530,J,1212261,J
+24,Maryland,23,Construction,01: Total,14287,14439,161034,G,11290084,G
+24,Maryland,31-33,Manufacturing,01: Total,2692,2853,98469,G,7261026,G
+24,Maryland,42,Wholesale Trade,01: Total,4131,5098,84733,G,7031783,G
+24,Maryland,44-45,Retail Trade,01: Total,10820,16885,283215,G,9857831,G
+24,Maryland,48-49,Transportation and Warehousing,01: Total,3490,3960,86840,G,4590457,G
+24,Maryland,51,Information,01: Total,1475,2527,45146,G,4859237,G
+24,Maryland,52,Finance and Insurance,01: Total,4110,7342,102618,G,13058926,G
+24,Maryland,53,Real Estate and Rental and Leasing,01: Total,5395,7470,44665,G,3360833,G
+24,Maryland,54,"Professional, Scientific, and Technical Services",01: Total,19185,21358,297820,G,31646903,G
+24,Maryland,55,Management of Companies and Enterprises,01: Total,593,1281,53571,G,6269312,G
+24,Maryland,56,Administrative and Support and Waste Management and Remediation Services,01: Total,7387,8703,220745,G,10518941,G
+24,Maryland,61,Educational Services,01: Total,2107,2274,76788,G,4491146,H
+24,Maryland,62,Health Care and Social Assistance,01: Total,13065,17827,380009,G,22363580,G
+24,Maryland,71,"Arts, Entertainment, and Recreation",01: Total,1996,2200,32964,G,1366622,G
+24,Maryland,72,Accommodation and Food Services,01: Total,9483,12244,199675,G,5119180,G
+24,Maryland,81,Other Services (except Public Administration),01: Total,13216,14085,103053,G,5094833,G
+24,Maryland,99,Industries not classified,01: Total,192,192,309,H,11837,G
+25,Massachusetts,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,352,352,1094,G,63012,G
+25,Massachusetts,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,57,70,855,G,82350,G
+25,Massachusetts,22,Utilities,01: Total,115,293,12775,J,1669963,J
+25,Massachusetts,23,Construction,01: Total,20607,20700,150746,G,13177683,G
+25,Massachusetts,31-33,Manufacturing,01: Total,5668,5998,227427,G,19429191,G
+25,Massachusetts,42,Wholesale Trade,01: Total,5727,6913,142488,G,16001993,G
+25,Massachusetts,44-45,Retail Trade,01: Total,15301,22474,344515,G,14159568,G
+25,Massachusetts,48-49,Transportation and Warehousing,01: Total,3939,4485,99873,G,5447039,G
+25,Massachusetts,51,Information,01: Total,2414,3709,121957,G,19560636,G
+25,Massachusetts,52,Finance and Insurance,01: Total,5036,9632,183984,G,30531189,G
+25,Massachusetts,53,Real Estate and Rental and Leasing,01: Total,6261,8119,49590,G,4233256,G
+25,Massachusetts,54,"Professional, Scientific, and Technical Services",01: Total,20386,21762,328631,G,48016576,G
+25,Massachusetts,55,Management of Companies and Enterprises,01: Total,734,1191,112679,G,16081469,G
+25,Massachusetts,56,Administrative and Support and Waste Management and Remediation Services,01: Total,10242,11543,207167,G,12657063,G
+25,Massachusetts,61,Educational Services,01: Total,3033,3241,205327,G,10953121,G
+25,Massachusetts,62,Health Care and Social Assistance,01: Total,12890,19898,602000,G,36580003,G
+25,Massachusetts,71,"Arts, Entertainment, and Recreation",01: Total,3206,3466,42489,G,2655771,H
+25,Massachusetts,72,Accommodation and Food Services,01: Total,13713,17480,233166,G,7403802,G
+25,Massachusetts,81,Other Services (except Public Administration),01: Total,17002,18413,108221,G,5016608,G
+25,Massachusetts,99,Industries not classified,01: Total,349,349,584,H,25824,G
+26,Michigan,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,636,639,4315,G,225949,G
+26,Michigan,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,263,308,4173,H,350677,H
+26,Michigan,22,Utilities,01: Total,134,433,23242,H,3046237,H
+26,Michigan,23,Construction,01: Total,20299,20494,162428,G,11830416,G
+26,Michigan,31-33,Manufacturing,01: Total,10896,12088,578425,G,36241821,G
+26,Michigan,42,Wholesale Trade,01: Total,8043,10231,177128,G,13501316,G
+26,Michigan,44-45,Retail Trade,01: Total,21629,32865,454038,G,15250702,G
+26,Michigan,48-49,Transportation and Warehousing,01: Total,6587,7664,130845,G,7287728,G
+26,Michigan,51,Information,01: Total,2396,4071,59273,G,5489651,G
+26,Michigan,52,Finance and Insurance,01: Total,6730,12631,186349,G,17145345,G
+26,Michigan,53,Real Estate and Rental and Leasing,01: Total,6792,9035,53070,G,2869876,G
+26,Michigan,54,"Professional, Scientific, and Technical Services",01: Total,19959,21856,283168,G,26238277,G
+26,Michigan,55,Management of Companies and Enterprises,01: Total,1028,1500,118667,G,13050304,G
+26,Michigan,56,Administrative and Support and Waste Management and Remediation Services,01: Total,10152,13448,348083,G,14154868,G
+26,Michigan,61,Educational Services,01: Total,2158,2373,62916,G,2270602,G
+26,Michigan,62,Health Care and Social Assistance,01: Total,19362,27674,613037,G,33457864,G
+26,Michigan,71,"Arts, Entertainment, and Recreation",01: Total,3288,3500,38053,G,1721744,G
+26,Michigan,72,Accommodation and Food Services,01: Total,15803,20766,322908,G,7089208,G
+26,Michigan,81,Other Services (except Public Administration),01: Total,21263,22856,147896,G,5541023,G
+26,Michigan,99,Industries not classified,01: Total,244,244,307,G,8910,G
+27,Minnesota,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,557,567,2768,G,132844,G
+27,Minnesota,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,128,161,4900,G,510224,G
+27,Minnesota,22,Utilities,01: Total,137,371,12698,J,1468357,H
+27,Minnesota,23,Construction,01: Total,17187,17346,131919,G,11008188,G
+27,Minnesota,31-33,Manufacturing,01: Total,6165,6793,312110,G,21517888,G
+27,Minnesota,42,Wholesale Trade,01: Total,5861,7354,137420,G,12440349,G
+27,Minnesota,44-45,Retail Trade,01: Total,11213,17768,296995,G,9481509,G
+27,Minnesota,48-49,Transportation and Warehousing,01: Total,4538,5170,93400,G,5068325,G
+27,Minnesota,51,Information,01: Total,1666,2693,57439,G,5934818,G
+27,Minnesota,52,Finance and Insurance,01: Total,5928,9599,167575,G,19271975,H
+27,Minnesota,53,Real Estate and Rental and Leasing,01: Total,6337,7796,37575,G,2342239,G
+27,Minnesota,54,"Professional, Scientific, and Technical Services",01: Total,15245,16270,182235,G,16492730,G
+27,Minnesota,55,Management of Companies and Enterprises,01: Total,768,1176,147524,G,16090559,G
+27,Minnesota,56,Administrative and Support and Waste Management and Remediation Services,01: Total,7049,8136,166277,G,8061523,G
+27,Minnesota,61,Educational Services,01: Total,1890,2007,68943,G,2514360,G
+27,Minnesota,62,Health Care and Social Assistance,01: Total,11482,18723,465397,G,24106276,G
+27,Minnesota,71,"Arts, Entertainment, and Recreation",01: Total,2904,3079,35635,G,1653785,G
+27,Minnesota,72,Accommodation and Food Services,01: Total,8791,11963,199233,G,4633148,G
+27,Minnesota,81,Other Services (except Public Administration),01: Total,14690,15730,107205,G,3976137,G
+27,Minnesota,99,Industries not classified,01: Total,134,134,168,H,4395,G
+28,Mississippi,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,615,622,4430,G,223910,G
+28,Mississippi,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,230,261,3090,G,244301,G
+28,Mississippi,22,Utilities,01: Total,366,591,9538,H,914957,H
+28,Mississippi,23,Construction,01: Total,3958,4010,43412,G,2529685,G
+28,Mississippi,31-33,Manufacturing,01: Total,1767,2024,145184,G,7743695,G
+28,Mississippi,42,Wholesale Trade,01: Total,1967,2566,39148,G,2438537,G
+28,Mississippi,44-45,Retail Trade,01: Total,7138,11160,135457,G,3954110,G
+28,Mississippi,48-49,Transportation and Warehousing,01: Total,2060,2417,46412,G,2301366,G
+28,Mississippi,51,Information,01: Total,412,1058,10883,G,596706,G
+28,Mississippi,52,Finance and Insurance,01: Total,2205,4647,32980,G,2271822,G
+28,Mississippi,53,Real Estate and Rental and Leasing,01: Total,1991,2510,10023,G,445864,G
+28,Mississippi,54,"Professional, Scientific, and Technical Services",01: Total,4172,4705,32522,G,1847323,G
+28,Mississippi,55,Management of Companies and Enterprises,01: Total,236,318,7820,G,659382,G
+28,Mississippi,56,Administrative and Support and Waste Management and Remediation Services,01: Total,2120,2518,57336,G,1712580,G
+28,Mississippi,61,Educational Services,01: Total,489,559,14085,G,406906,G
+28,Mississippi,62,Health Care and Social Assistance,01: Total,4961,6635,169976,G,8745104,G
+28,Mississippi,71,"Arts, Entertainment, and Recreation",01: Total,669,703,7360,G,163080,G
+28,Mississippi,72,Accommodation and Food Services,01: Total,4326,5947,124163,G,2391469,G
+28,Mississippi,81,Other Services (except Public Administration),01: Total,6059,6445,36873,G,1102228,G
+28,Mississippi,99,Industries not classified,01: Total,109,109,160,J,3704,G
+29,Missouri,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,318,319,1899,G,73984,G
+29,Missouri,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,151,258,3741,H,245226,H
+29,Missouri,22,Utilities,01: Total,103,409,15869,H,1780657,H
+29,Missouri,23,Construction,01: Total,13960,14134,132940,G,9317354,G
+29,Missouri,31-33,Manufacturing,01: Total,5009,5535,271288,G,16759147,G
+29,Missouri,42,Wholesale Trade,01: Total,5420,7028,126399,G,8329430,G
+29,Missouri,44-45,Retail Trade,01: Total,11978,19815,308786,G,9762276,G
+29,Missouri,48-49,Transportation and Warehousing,01: Total,4639,5449,96460,G,4609102,G
+29,Missouri,51,Information,01: Total,1378,2754,51926,G,4469650,G
+29,Missouri,52,Finance and Insurance,01: Total,5561,10599,144365,G,13560554,G
+29,Missouri,53,Real Estate and Rental and Leasing,01: Total,5816,7200,38381,G,2228786,G
+29,Missouri,54,"Professional, Scientific, and Technical Services",01: Total,12416,13888,170727,G,14376211,G
+29,Missouri,55,Management of Companies and Enterprises,01: Total,723,1332,78583,G,8663397,G
+29,Missouri,56,Administrative and Support and Waste Management and Remediation Services,01: Total,6824,7833,174497,G,8026379,G
+29,Missouri,61,Educational Services,01: Total,1491,1631,72185,G,3781356,H
+29,Missouri,62,Health Care and Social Assistance,01: Total,17007,22363,413948,G,21536386,G
+29,Missouri,71,"Arts, Entertainment, and Recreation",01: Total,2174,2359,33888,G,1631091,G
+29,Missouri,72,Accommodation and Food Services,01: Total,9481,13268,236072,G,5013236,G
+29,Missouri,81,Other Services (except Public Administration),01: Total,14340,15608,105632,G,3652090,G
+29,Missouri,99,Industries not classified,01: Total,504,504,558,J,9147,G
+30,Montana,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,345,353,1425,G,94571,G
+30,Montana,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,304,320,5054,H,513237,H
+30,Montana,22,Utilities,01: Total,86,199,2941,H,278114,H
+30,Montana,23,Construction,01: Total,6273,6314,30361,G,1945557,G
+30,Montana,31-33,Manufacturing,01: Total,1345,1381,20635,G,1183937,G
+30,Montana,42,Wholesale Trade,01: Total,1169,1562,14940,G,960135,G
+30,Montana,44-45,Retail Trade,01: Total,3443,4576,59024,G,2063756,G
+30,Montana,48-49,Transportation and Warehousing,01: Total,1207,1396,12407,G,606823,G
+30,Montana,51,Information,01: Total,436,718,7518,G,523816,G
+30,Montana,52,Finance and Insurance,01: Total,1258,2056,17031,G,1324248,G
+30,Montana,53,Real Estate and Rental and Leasing,01: Total,2191,2403,6266,G,303608,G
+30,Montana,54,"Professional, Scientific, and Technical Services",01: Total,3875,4119,21742,G,1421014,G
+30,Montana,55,Management of Companies and Enterprises,01: Total,110,127,3124,G,310033,G
+30,Montana,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1973,2105,20788,G,810227,G
+30,Montana,61,Educational Services,01: Total,427,436,6130,G,184073,G
+30,Montana,62,Health Care and Social Assistance,01: Total,3347,4148,72802,G,3940496,G
+30,Montana,71,"Arts, Entertainment, and Recreation",01: Total,1186,1313,9760,G,244380,G
+30,Montana,72,Accommodation and Food Services,01: Total,3264,3715,51740,G,1135457,G
+30,Montana,81,Other Services (except Public Administration),01: Total,3295,3431,16524,G,591120,G
+30,Montana,99,Industries not classified,01: Total,44,44,56,G,1321,G
+31,Nebraska,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,186,200,1274,H,82964,H
+31,Nebraska,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,87,108,977,H,65449,H
+31,Nebraska,22,Utilities,01: Total,37,105,949,J,131572,J
+31,Nebraska,23,Construction,01: Total,6631,6698,51778,G,3104126,G
+31,Nebraska,31-33,Manufacturing,01: Total,1550,1759,99378,G,5714759,G
+31,Nebraska,42,Wholesale Trade,01: Total,2114,3067,40769,G,2780010,G
+31,Nebraska,44-45,Retail Trade,01: Total,4533,6878,107733,G,3371261,G
+31,Nebraska,48-49,Transportation and Warehousing,01: Total,2284,2537,32818,G,1680568,G
+31,Nebraska,51,Information,01: Total,548,957,18953,G,1515750,G
+31,Nebraska,52,Finance and Insurance,01: Total,2595,4282,70097,G,5795745,G
+31,Nebraska,53,Real Estate and Rental and Leasing,01: Total,2326,2661,12293,G,639068,G
+31,Nebraska,54,"Professional, Scientific, and Technical Services",01: Total,4385,4707,41071,G,2953917,G
+31,Nebraska,55,Management of Companies and Enterprises,01: Total,282,347,17934,G,1559081,G
+31,Nebraska,56,Administrative and Support and Waste Management and Remediation Services,01: Total,2593,2917,78167,G,4045343,G
+31,Nebraska,61,Educational Services,01: Total,571,613,18731,G,622023,H
+31,Nebraska,62,Health Care and Social Assistance,01: Total,4722,6113,139012,G,7705779,G
+31,Nebraska,71,"Arts, Entertainment, and Recreation",01: Total,913,969,12413,G,273702,G
+31,Nebraska,72,Accommodation and Food Services,01: Total,3540,4645,72261,G,1365471,G
+31,Nebraska,81,Other Services (except Public Administration),01: Total,5543,5918,35095,G,1189006,G
+31,Nebraska,99,Industries not classified,01: Total,61,61,80,H,1776,G
+32,Nevada,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,57,57,305,H,13743,G
+32,Nevada,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,182,203,14349,H,1505748,H
+32,Nevada,22,Utilities,01: Total,52,119,4582,J,559652,J
+32,Nevada,23,Construction,01: Total,5557,5651,92895,G,6311435,G
+32,Nevada,31-33,Manufacturing,01: Total,1868,1944,49238,G,3216749,G
+32,Nevada,42,Wholesale Trade,01: Total,2807,3205,38828,G,2771773,G
+32,Nevada,44-45,Retail Trade,01: Total,5499,8839,151908,G,5606760,G
+32,Nevada,48-49,Transportation and Warehousing,01: Total,1848,2112,56975,G,2939253,G
+32,Nevada,51,Information,01: Total,1161,1633,18502,G,1561400,G
+32,Nevada,52,Finance and Insurance,01: Total,2861,4606,43039,G,3904865,G
+32,Nevada,53,Real Estate and Rental and Leasing,01: Total,4351,5339,27780,G,1643022,G
+32,Nevada,54,"Professional, Scientific, and Technical Services",01: Total,9531,10169,63122,G,4862046,G
+32,Nevada,55,Management of Companies and Enterprises,01: Total,369,458,19238,H,2017054,H
+32,Nevada,56,Administrative and Support and Waste Management and Remediation Services,01: Total,4407,4898,110833,G,4619494,G
+32,Nevada,61,Educational Services,01: Total,862,919,14828,G,662593,G
+32,Nevada,62,Health Care and Social Assistance,01: Total,6893,8617,143028,G,8259285,G
+32,Nevada,71,"Arts, Entertainment, and Recreation",01: Total,1672,1873,25607,G,1505005,G
+32,Nevada,72,Accommodation and Food Services,01: Total,5189,7368,247515,G,8657890,H
+32,Nevada,81,Other Services (except Public Administration),01: Total,4841,5336,35074,G,1332266,G
+32,Nevada,99,Industries not classified,01: Total,159,159,204,G,11794,G
+33,New Hampshire,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,137,138,658,G,36154,G
+33,New Hampshire,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,32,36,208,G,18037,H
+33,New Hampshire,22,Utilities,01: Total,50,115,2982,H,334678,H
+33,New Hampshire,23,Construction,01: Total,4698,4735,31360,G,2304360,G
+33,New Hampshire,31-33,Manufacturing,01: Total,1648,1737,65051,G,4639191,G
+33,New Hampshire,42,Wholesale Trade,01: Total,1552,1758,24140,G,2265705,G
+33,New Hampshire,44-45,Retail Trade,01: Total,3623,5718,91406,G,3414957,G
+33,New Hampshire,48-49,Transportation and Warehousing,01: Total,758,864,16376,G,776723,G
+33,New Hampshire,51,Information,01: Total,482,766,14358,G,1554782,G
+33,New Hampshire,52,Finance and Insurance,01: Total,1020,2071,28645,H,3394515,H
+33,New Hampshire,53,Real Estate and Rental and Leasing,01: Total,1199,1514,7992,G,476804,G
+33,New Hampshire,54,"Professional, Scientific, and Technical Services",01: Total,3418,3693,34389,G,3599290,G
+33,New Hampshire,55,Management of Companies and Enterprises,01: Total,159,212,7917,G,840381,G
+33,New Hampshire,56,Administrative and Support and Waste Management and Remediation Services,01: Total,2342,2564,58211,H,3466072,H
+33,New Hampshire,61,Educational Services,01: Total,623,659,24709,G,1174984,G
+33,New Hampshire,62,Health Care and Social Assistance,01: Total,2551,3713,94003,G,5846119,G
+33,New Hampshire,71,"Arts, Entertainment, and Recreation",01: Total,801,833,11048,G,333725,G
+33,New Hampshire,72,Accommodation and Food Services,01: Total,3132,3841,52343,G,1418503,G
+33,New Hampshire,81,Other Services (except Public Administration),01: Total,3625,3810,20998,G,848482,G
+33,New Hampshire,99,Industries not classified,01: Total,48,48,46,G,1948,G
+34,New Jersey,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,214,214,1033,G,51439,G
+34,New Jersey,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,58,74,1346,G,122499,G
+34,New Jersey,22,Utilities,01: Total,99,427,18214,J,2470226,J
+34,New Jersey,23,Construction,01: Total,21885,22009,157962,G,12722447,G
+34,New Jersey,31-33,Manufacturing,01: Total,6649,6969,210468,G,14899644,G
+34,New Jersey,42,Wholesale Trade,01: Total,11726,13119,263388,G,28233389,G
+34,New Jersey,44-45,Retail Trade,01: Total,21378,29885,440147,G,16422911,G
+34,New Jersey,48-49,Transportation and Warehousing,01: Total,7775,8870,202715,G,12116778,G
+34,New Jersey,51,Information,01: Total,2263,3829,80101,G,9517134,G
+34,New Jersey,52,Finance and Insurance,01: Total,6080,11530,205375,G,29575103,G
+34,New Jersey,53,Real Estate and Rental and Leasing,01: Total,8069,10079,59068,G,4263573,G
+34,New Jersey,54,"Professional, Scientific, and Technical Services",01: Total,26816,28459,317495,G,35468878,G
+34,New Jersey,55,Management of Companies and Enterprises,01: Total,865,1448,114827,G,17169345,G
+34,New Jersey,56,Administrative and Support and Waste Management and Remediation Services,01: Total,12910,14548,359208,G,18336480,G
+34,New Jersey,61,Educational Services,01: Total,3662,3923,102475,G,4997830,G
+34,New Jersey,62,Health Care and Social Assistance,01: Total,21089,29013,588444,G,35016440,G
+34,New Jersey,71,"Arts, Entertainment, and Recreation",01: Total,3611,3861,45010,G,2289362,G
+34,New Jersey,72,Accommodation and Food Services,01: Total,18731,21659,264523,G,7342615,G
+34,New Jersey,81,Other Services (except Public Administration),01: Total,22946,23713,138320,G,5388804,G
+34,New Jersey,99,Industries not classified,01: Total,321,321,424,H,18795,G
+35,New Mexico,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,106,108,426,G,19391,G
+35,New Mexico,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,542,620,13833,G,1276554,G
+35,New Mexico,22,Utilities,01: Total,137,225,4412,G,402828,G
+35,New Mexico,23,Construction,01: Total,4404,4440,42524,G,2363972,G
+35,New Mexico,31-33,Manufacturing,01: Total,1283,1326,26525,G,1513637,G
+35,New Mexico,42,Wholesale Trade,01: Total,1314,1641,19869,G,1355737,G
+35,New Mexico,44-45,Retail Trade,01: Total,3598,6012,90493,G,2974984,G
+35,New Mexico,48-49,Transportation and Warehousing,01: Total,1232,1477,18227,G,934421,G
+35,New Mexico,51,Information,01: Total,451,835,8873,G,560948,G
+35,New Mexico,52,Finance and Insurance,01: Total,1392,2640,24993,G,1781683,G
+35,New Mexico,53,Real Estate and Rental and Leasing,01: Total,2008,2442,8771,G,420805,G
+35,New Mexico,54,"Professional, Scientific, and Technical Services",01: Total,4221,4660,59148,G,4818978,G
+35,New Mexico,55,Management of Companies and Enterprises,01: Total,173,213,6427,H,437253,H
+35,New Mexico,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1808,2060,35663,G,1539975,G
+35,New Mexico,61,Educational Services,01: Total,547,570,7938,G,326982,G
+35,New Mexico,62,Health Care and Social Assistance,01: Total,4069,5323,124282,G,6032217,G
+35,New Mexico,71,"Arts, Entertainment, and Recreation",01: Total,675,713,9349,G,293439,G
+35,New Mexico,72,Accommodation and Food Services,01: Total,3225,4418,80008,G,1849524,G
+35,New Mexico,81,Other Services (except Public Administration),01: Total,3892,4172,24250,G,870477,G
+35,New Mexico,99,Industries not classified,01: Total,58,58,74,G,2148,H
+36,New York,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,584,588,2779,G,128829,G
+36,New York,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,203,262,3661,G,296535,G
+36,New York,22,Utilities,01: Total,253,777,40265,G,5012659,G
+36,New York,23,Construction,01: Total,50168,50471,358370,G,27883941,G
+36,New York,31-33,Manufacturing,01: Total,13264,13938,382812,G,26074054,G
+36,New York,42,Wholesale Trade,01: Total,24642,27463,307390,G,27537015,G
+36,New York,44-45,Retail Trade,01: Total,55514,72828,849233,G,33129854,G
+36,New York,48-49,Transportation and Warehousing,01: Total,12430,13937,259227,G,14583716,G
+36,New York,51,Information,01: Total,8749,12428,300382,G,46768544,G
+36,New York,52,Finance and Insurance,01: Total,14869,25980,543486,G,135481135,G
+36,New York,53,Real Estate and Rental and Leasing,01: Total,30095,33874,170755,G,13300991,G
+36,New York,54,"Professional, Scientific, and Technical Services",01: Total,58113,61665,639839,G,77334202,G
+36,New York,55,Management of Companies and Enterprises,01: Total,1787,2982,180784,G,27472844,G
+36,New York,56,Administrative and Support and Waste Management and Remediation Services,01: Total,24780,27357,725352,G,64988919,G
+36,New York,61,Educational Services,01: Total,7700,8384,383253,G,22122028,G
+36,New York,62,Health Care and Social Assistance,01: Total,43133,58497,1693257,G,97372218,G
+36,New York,71,"Arts, Entertainment, and Recreation",01: Total,12522,13456,112782,G,8886312,G
+36,New York,72,Accommodation and Food Services,01: Total,46104,53045,585126,G,19119405,G
+36,New York,81,Other Services (except Public Administration),01: Total,54409,56968,347591,G,16928687,G
+36,New York,99,Industries not classified,01: Total,858,858,936,H,53051,G
+37,North Carolina,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,783,793,4714,G,212769,G
+37,North Carolina,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,101,198,3464,G,254291,G
+37,North Carolina,22,Utilities,01: Total,168,648,20391,J,2204430,J
+37,North Carolina,23,Construction,01: Total,26090,26522,228752,G,13516678,G
+37,North Carolina,31-33,Manufacturing,01: Total,7508,8537,451487,G,26233318,G
+37,North Carolina,42,Wholesale Trade,01: Total,8626,11266,191495,G,15828310,G
+37,North Carolina,44-45,Retail Trade,01: Total,20579,34963,512706,G,15624170,G
+37,North Carolina,48-49,Transportation and Warehousing,01: Total,6621,7661,159091,G,7673182,G
+37,North Carolina,51,Information,01: Total,2174,4131,86053,G,9651201,G
+37,North Carolina,52,Finance and Insurance,01: Total,6876,13539,212324,H,24210018,H
+37,North Carolina,53,Real Estate and Rental and Leasing,01: Total,11456,14743,58890,G,3462503,G
+37,North Carolina,54,"Professional, Scientific, and Technical Services",01: Total,24574,26689,245485,G,22199226,G
+37,North Carolina,55,Management of Companies and Enterprises,01: Total,952,1750,99410,G,10341130,G
+37,North Carolina,56,Administrative and Support and Waste Management and Remediation Services,01: Total,12582,14564,290845,G,12298597,G
+37,North Carolina,61,Educational Services,01: Total,3123,3269,98677,G,4837839,G
+37,North Carolina,62,Health Care and Social Assistance,01: Total,18274,25876,625672,G,35332312,G
+37,North Carolina,71,"Arts, Entertainment, and Recreation",01: Total,3900,4228,54515,G,2228570,G
+37,North Carolina,72,Accommodation and Food Services,01: Total,16436,22625,402561,G,8298392,G
+37,North Carolina,81,Other Services (except Public Administration),01: Total,23404,25178,156834,G,5417582,G
+37,North Carolina,99,Industries not classified,01: Total,278,278,448,H,11311,G
+38,North Dakota,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,108,109,415,G,23538,G
+38,North Dakota,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,449,520,13546,G,1460861,G
+38,North Dakota,22,Utilities,01: Total,51,152,3671,J,410697,J
+38,North Dakota,23,Construction,01: Total,2872,2925,21781,G,1626081,G
+38,North Dakota,31-33,Manufacturing,01: Total,592,670,24990,G,1577376,G
+38,North Dakota,42,Wholesale Trade,01: Total,1088,1702,21159,G,1476199,G
+38,North Dakota,44-45,Retail Trade,01: Total,2079,3123,46355,G,1559709,G
+38,North Dakota,48-49,Transportation and Warehousing,01: Total,1312,1515,15718,G,935269,G
+38,North Dakota,51,Information,01: Total,254,362,6596,G,517334,G
+38,North Dakota,52,Finance and Insurance,01: Total,1051,1784,18371,G,1409925,G
+38,North Dakota,53,Real Estate and Rental and Leasing,01: Total,970,1143,5339,G,281011,G
+38,North Dakota,54,"Professional, Scientific, and Technical Services",01: Total,1723,1873,17366,G,1221061,G
+38,North Dakota,55,Management of Companies and Enterprises,01: Total,110,137,4633,H,423645,H
+38,North Dakota,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1054,1180,13666,G,571522,G
+38,North Dakota,61,Educational Services,01: Total,186,191,4061,G,120189,G
+38,North Dakota,62,Health Care and Social Assistance,01: Total,1714,2234,65242,G,3666950,G
+38,North Dakota,71,"Arts, Entertainment, and Recreation",01: Total,433,486,5068,H,103278,G
+38,North Dakota,72,Accommodation and Food Services,01: Total,1754,2090,30977,G,654445,G
+38,North Dakota,81,Other Services (except Public Administration),01: Total,2505,2577,13674,G,489660,G
+38,North Dakota,99,Industries not classified,01: Total,43,43,56,J,1939,G
+39,Ohio,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,298,300,1187,G,47179,G
+39,Ohio,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,472,597,8870,G,672607,H
+39,Ohio,22,Utilities,01: Total,179,722,24090,H,2736988,H
+39,Ohio,23,Construction,01: Total,20496,20891,198894,G,13927716,G
+39,Ohio,31-33,Manufacturing,01: Total,11774,13369,664311,G,41390417,G
+39,Ohio,42,Wholesale Trade,01: Total,9702,12842,225824,G,16427757,G
+39,Ohio,44-45,Retail Trade,01: Total,19253,34090,552497,G,17973707,G
+39,Ohio,48-49,Transportation and Warehousing,01: Total,6958,8826,218678,G,12291197,G
+39,Ohio,51,Information,01: Total,1961,4252,90819,G,7037189,G
+39,Ohio,52,Finance and Insurance,01: Total,7886,15417,255668,G,24523484,G
+39,Ohio,53,Real Estate and Rental and Leasing,01: Total,8274,11501,63538,G,3650271,G
+39,Ohio,54,"Professional, Scientific, and Technical Services",01: Total,21247,23822,257631,G,20908807,G
+39,Ohio,55,Management of Companies and Enterprises,01: Total,1274,2094,175292,G,16349774,G
+39,Ohio,56,Administrative and Support and Waste Management and Remediation Services,01: Total,11764,14257,459331,G,19669916,G
+39,Ohio,61,Educational Services,01: Total,2821,3138,104709,G,3660963,G
+39,Ohio,62,Health Care and Social Assistance,01: Total,19283,30145,847141,G,46450303,G
+39,Ohio,71,"Arts, Entertainment, and Recreation",01: Total,3660,3976,62711,G,2983400,G
+39,Ohio,72,Accommodation and Food Services,01: Total,17498,24819,426446,G,8263896,G
+39,Ohio,81,Other Services (except Public Administration),01: Total,24284,26992,184375,G,6348973,G
+39,Ohio,99,Industries not classified,01: Total,191,191,226,G,9698,H
+40,Oklahoma,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,206,206,1154,G,48017,G
+40,Oklahoma,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,2036,2279,26606,G,2509747,G
+40,Oklahoma,22,Utilities,01: Total,144,399,10083,H,980782,H
+40,Oklahoma,23,Construction,01: Total,8513,8614,72698,G,4110335,G
+40,Oklahoma,31-33,Manufacturing,01: Total,2922,3256,122163,G,7303534,G
+40,Oklahoma,42,Wholesale Trade,01: Total,3276,4389,54247,G,3488926,G
+40,Oklahoma,44-45,Retail Trade,01: Total,8453,13277,183688,G,5929080,G
+40,Oklahoma,48-49,Transportation and Warehousing,01: Total,2348,2833,54658,G,3103233,G
+40,Oklahoma,51,Information,01: Total,779,1566,22982,G,1484884,G
+40,Oklahoma,52,Finance and Insurance,01: Total,3997,6803,57552,G,4324920,G
+40,Oklahoma,53,Real Estate and Rental and Leasing,01: Total,3783,4597,18864,G,928169,G
+40,Oklahoma,54,"Professional, Scientific, and Technical Services",01: Total,9222,9928,79547,G,5746832,G
+40,Oklahoma,55,Management of Companies and Enterprises,01: Total,428,550,39680,G,3496872,G
+40,Oklahoma,56,Administrative and Support and Waste Management and Remediation Services,01: Total,4218,4850,117664,G,5766878,G
+40,Oklahoma,61,Educational Services,01: Total,766,807,21918,G,794899,G
+40,Oklahoma,62,Health Care and Social Assistance,01: Total,8421,11214,221857,G,11374386,G
+40,Oklahoma,71,"Arts, Entertainment, and Recreation",01: Total,1107,1244,25052,G,838719,G
+40,Oklahoma,72,Accommodation and Food Services,01: Total,6042,8653,157114,G,2991760,G
+40,Oklahoma,81,Other Services (except Public Administration),01: Total,8574,9167,58792,G,1986890,G
+40,Oklahoma,99,Industries not classified,01: Total,119,119,249,J,6179,G
+41,Oregon,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,1343,1370,13462,G,802803,G
+41,Oregon,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,98,125,1546,G,105040,G
+41,Oregon,22,Utilities,01: Total,131,303,8400,H,908684,H
+41,Oregon,23,Construction,01: Total,14374,14529,107481,G,7461881,G
+41,Oregon,31-33,Manufacturing,01: Total,4981,5328,166998,G,12153251,G
+41,Oregon,42,Wholesale Trade,01: Total,3995,4994,75193,G,6003091,G
+41,Oregon,44-45,Retail Trade,01: Total,9383,13914,214079,G,7670992,G
+41,Oregon,48-49,Transportation and Warehousing,01: Total,2984,3470,67192,G,3535001,G
+41,Oregon,51,Information,01: Total,1551,2415,35041,G,3670246,G
+41,Oregon,52,Finance and Insurance,01: Total,3331,6008,62520,G,6182112,G
+41,Oregon,53,Real Estate and Rental and Leasing,01: Total,5887,7269,30233,G,1635944,G
+41,Oregon,54,"Professional, Scientific, and Technical Services",01: Total,12407,13154,97412,G,8699872,G
+41,Oregon,55,Management of Companies and Enterprises,01: Total,474,661,53954,G,6817569,H
+41,Oregon,56,Administrative and Support and Waste Management and Remediation Services,01: Total,5631,6351,106166,G,4820055,G
+41,Oregon,61,Educational Services,01: Total,1559,1689,31705,G,1193213,G
+41,Oregon,62,Health Care and Social Assistance,01: Total,10869,14846,266257,G,16027530,G
+41,Oregon,71,"Arts, Entertainment, and Recreation",01: Total,1882,2045,20580,G,793853,G
+41,Oregon,72,Accommodation and Food Services,01: Total,9477,11880,153774,G,4039423,G
+41,Oregon,81,Other Services (except Public Administration),01: Total,9445,10211,63463,G,2515770,G
+41,Oregon,99,Industries not classified,01: Total,142,142,157,J,4845,G
+42,Pennsylvania,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,565,565,2771,G,126418,H
+42,Pennsylvania,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,684,916,18563,G,1795543,G
+42,Pennsylvania,22,Utilities,01: Total,234,882,28511,H,3305611,H
+42,Pennsylvania,23,Construction,01: Total,27900,28244,249757,G,18161574,G
+42,Pennsylvania,31-33,Manufacturing,01: Total,11892,13208,532207,G,34102023,G
+42,Pennsylvania,42,Wholesale Trade,01: Total,10412,13422,245504,G,20996096,G
+42,Pennsylvania,44-45,Retail Trade,01: Total,24686,40439,634259,G,20844415,G
+42,Pennsylvania,48-49,Transportation and Warehousing,01: Total,8374,10302,256524,G,13080845,G
+42,Pennsylvania,51,Information,01: Total,2731,5616,105124,G,11133188,G
+42,Pennsylvania,52,Finance and Insurance,01: Total,8969,17344,289366,G,30131413,G
+42,Pennsylvania,53,Real Estate and Rental and Leasing,01: Total,8482,11385,62507,G,4137971,G
+42,Pennsylvania,54,"Professional, Scientific, and Technical Services",01: Total,27411,30183,336919,G,32396054,G
+42,Pennsylvania,55,Management of Companies and Enterprises,01: Total,1329,2270,179016,G,20468389,G
+42,Pennsylvania,56,Administrative and Support and Waste Management and Remediation Services,01: Total,13889,16718,335674,G,15567345,G
+42,Pennsylvania,61,Educational Services,01: Total,3600,3979,245755,G,12124762,G
+42,Pennsylvania,62,Health Care and Social Assistance,01: Total,23489,38888,1059484,G,58332774,G
+42,Pennsylvania,71,"Arts, Entertainment, and Recreation",01: Total,4698,5041,84233,G,3694368,G
+42,Pennsylvania,72,Accommodation and Food Services,01: Total,22879,28570,394222,G,8614072,G
+42,Pennsylvania,81,Other Services (except Public Administration),01: Total,33897,36452,219251,G,7632400,G
+42,Pennsylvania,99,Industries not classified,01: Total,209,209,258,G,10815,G
+44,Rhode Island,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,38,38,174,H,9035,H
+44,Rhode Island,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,13,13,150,H,9991,H
+44,Rhode Island,22,Utilities,01: Total,20,39,1412,H,154276,H
+44,Rhode Island,23,Construction,01: Total,3372,3377,19037,G,1402125,G
+44,Rhode Island,31-33,Manufacturing,01: Total,1160,1189,37669,G,2513579,G
+44,Rhode Island,42,Wholesale Trade,01: Total,1178,1267,18622,G,1512905,G
+44,Rhode Island,44-45,Retail Trade,01: Total,2656,3566,47172,G,1672377,G
+44,Rhode Island,48-49,Transportation and Warehousing,01: Total,735,787,12263,G,563763,G
+44,Rhode Island,51,Information,01: Total,304,459,6573,H,559352,H
+44,Rhode Island,52,Finance and Insurance,01: Total,805,1524,32009,H,3499846,H
+44,Rhode Island,53,Real Estate and Rental and Leasing,01: Total,1031,1204,5195,G,302931,G
+44,Rhode Island,54,"Professional, Scientific, and Technical Services",01: Total,2903,3063,23083,G,1954415,G
+44,Rhode Island,55,Management of Companies and Enterprises,01: Total,117,154,10225,H,937204,H
+44,Rhode Island,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1817,1945,25046,G,1225919,G
+44,Rhode Island,61,Educational Services,01: Total,404,437,27110,G,1230304,G
+44,Rhode Island,62,Health Care and Social Assistance,01: Total,2204,3108,82063,G,4558404,G
+44,Rhode Island,71,"Arts, Entertainment, and Recreation",01: Total,555,608,5804,G,223058,G
+44,Rhode Island,72,Accommodation and Food Services,01: Total,2715,3167,43303,G,1228972,G
+44,Rhode Island,81,Other Services (except Public Administration),01: Total,2883,3019,15815,G,667820,G
+44,Rhode Island,99,Industries not classified,01: Total,25,25,36,J,1228,H
+45,South Carolina,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,525,538,3683,G,187660,G
+45,South Carolina,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,60,94,1827,H,133546,H
+45,South Carolina,22,Utilities,01: Total,118,359,10322,J,1037496,H
+45,South Carolina,23,Construction,01: Total,10949,11132,90954,G,5271094,G
+45,South Carolina,31-33,Manufacturing,01: Total,3465,3890,240109,G,14920925,G
+45,South Carolina,42,Wholesale Trade,01: Total,3720,4854,76193,G,5305317,G
+45,South Carolina,44-45,Retail Trade,01: Total,10889,18025,256969,G,7832020,G
+45,South Carolina,48-49,Transportation and Warehousing,01: Total,2826,3369,75694,G,3463914,G
+45,South Carolina,51,Information,01: Total,915,1760,33430,G,2566509,H
+45,South Carolina,52,Finance and Insurance,01: Total,3638,7684,78995,G,6565818,G
+45,South Carolina,53,Real Estate and Rental and Leasing,01: Total,5826,7225,26880,G,1468684,G
+45,South Carolina,54,"Professional, Scientific, and Technical Services",01: Total,10785,11744,101511,G,7536696,G
+45,South Carolina,55,Management of Companies and Enterprises,01: Total,425,650,30169,G,2885142,G
+45,South Carolina,56,Administrative and Support and Waste Management and Remediation Services,01: Total,5743,6800,305827,G,13379633,G
+45,South Carolina,61,Educational Services,01: Total,1236,1308,30374,G,1049069,G
+45,South Carolina,62,Health Care and Social Assistance,01: Total,8557,11796,252042,G,12983503,G
+45,South Carolina,71,"Arts, Entertainment, and Recreation",01: Total,1651,1828,26017,G,632135,G
+45,South Carolina,72,Accommodation and Food Services,01: Total,8565,11438,216369,G,4618021,G
+45,South Carolina,81,Other Services (except Public Administration),01: Total,11550,12237,78370,G,2622611,G
+45,South Carolina,99,Industries not classified,01: Total,165,165,280,J,8209,H
+46,South Dakota,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,152,153,469,G,21126,G
+46,South Dakota,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,50,64,1305,H,120744,H
+46,South Dakota,22,Utilities,01: Total,74,160,2765,H,272377,H
+46,South Dakota,23,Construction,01: Total,3534,3567,22903,G,1365653,G
+46,South Dakota,31-33,Manufacturing,01: Total,925,1032,45768,G,2499406,G
+46,South Dakota,42,Wholesale Trade,01: Total,1138,1539,18896,G,1197571,G
+46,South Dakota,44-45,Retail Trade,01: Total,2704,3742,52879,G,1675269,G
+46,South Dakota,48-49,Transportation and Warehousing,01: Total,1178,1291,10710,G,500984,G
+46,South Dakota,51,Information,01: Total,315,468,5623,G,349716,G
+46,South Dakota,52,Finance and Insurance,01: Total,1261,2024,25187,G,1927369,G
+46,South Dakota,53,Real Estate and Rental and Leasing,01: Total,1123,1281,4155,G,186747,G
+46,South Dakota,54,"Professional, Scientific, and Technical Services",01: Total,1952,2077,14653,G,830347,G
+46,South Dakota,55,Management of Companies and Enterprises,01: Total,124,140,7623,H,630704,G
+46,South Dakota,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1211,1297,12421,G,529971,G
+46,South Dakota,61,Educational Services,01: Total,257,262,7632,H,235702,H
+46,South Dakota,62,Health Care and Social Assistance,01: Total,1909,2651,73257,H,4454995,H
+46,South Dakota,71,"Arts, Entertainment, and Recreation",01: Total,664,745,6262,G,153259,G
+46,South Dakota,72,Accommodation and Food Services,01: Total,2168,2556,37090,G,808477,G
+46,South Dakota,81,Other Services (except Public Administration),01: Total,2768,2871,14297,G,465672,G
+46,South Dakota,99,Industries not classified,01: Total,31,31,28,H,731,G
+47,Tennessee,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,217,221,1594,G,58348,G
+47,Tennessee,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,89,177,2695,G,185538,G
+47,Tennessee,22,Utilities,01: Total,69,170,3405,G,296680,G
+47,Tennessee,23,Construction,01: Total,11208,11447,126341,G,7893638,G
+47,Tennessee,31-33,Manufacturing,01: Total,5152,5727,332178,G,20137866,G
+47,Tennessee,42,Wholesale Trade,01: Total,4878,6588,119089,G,8777573,G
+47,Tennessee,44-45,Retail Trade,01: Total,13816,22874,332323,G,10970393,G
+47,Tennessee,48-49,Transportation and Warehousing,01: Total,3795,5111,168997,G,8867167,G
+47,Tennessee,51,Information,01: Total,1686,3011,43346,G,3361717,G
+47,Tennessee,52,Finance and Insurance,01: Total,4535,10068,139034,G,13658082,G
+47,Tennessee,53,Real Estate and Rental and Leasing,01: Total,4565,6777,38098,G,2230495,G
+47,Tennessee,54,"Professional, Scientific, and Technical Services",01: Total,10924,12153,129379,G,9918238,G
+47,Tennessee,55,Management of Companies and Enterprises,01: Total,708,1393,92261,G,10780972,H
+47,Tennessee,56,Administrative and Support and Waste Management and Remediation Services,01: Total,6496,8032,262737,G,10450798,G
+47,Tennessee,61,Educational Services,01: Total,1456,1535,63764,G,2683336,G
+47,Tennessee,62,Health Care and Social Assistance,01: Total,10652,16576,429947,G,24875455,G
+47,Tennessee,71,"Arts, Entertainment, and Recreation",01: Total,2805,2980,35182,G,1879169,G
+47,Tennessee,72,Accommodation and Food Services,01: Total,10040,14565,273147,G,5994000,G
+47,Tennessee,81,Other Services (except Public Administration),01: Total,13715,14863,110523,G,3817604,G
+47,Tennessee,99,Industries not classified,01: Total,189,189,376,H,14830,G
+48,Texas,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,1095,1132,7063,G,355090,G
+48,Texas,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,5636,6993,163340,G,18946601,G
+48,Texas,22,Utilities,01: Total,1055,2140,53851,G,6258024,G
+48,Texas,23,Construction,01: Total,50553,51920,700014,G,46776035,G
+48,Texas,31-33,Manufacturing,01: Total,17898,20399,798719,G,55625589,G
+48,Texas,42,Wholesale Trade,01: Total,24807,33091,511725,G,41631935,G
+48,Texas,44-45,Retail Trade,01: Total,48643,82077,1319347,G,45886284,G
+48,Texas,48-49,Transportation and Warehousing,01: Total,19246,24030,546451,G,32399579,H
+48,Texas,51,Information,01: Total,6039,11354,248110,G,26667698,G
+48,Texas,52,Finance and Insurance,01: Total,21857,42469,593482,G,59806097,G
+48,Texas,53,Real Estate and Rental and Leasing,01: Total,26986,36585,207830,G,14514920,G
+48,Texas,54,"Professional, Scientific, and Technical Services",01: Total,71123,78125,775762,G,76517757,G
+48,Texas,55,Management of Companies and Enterprises,01: Total,2596,4480,315367,G,41808534,G
+48,Texas,56,Administrative and Support and Waste Management and Remediation Services,01: Total,26341,32117,1046925,G,51593930,G
+48,Texas,61,Educational Services,01: Total,7338,8176,201291,G,9507650,G
+48,Texas,62,Health Care and Social Assistance,01: Total,57486,74951,1590978,G,84935125,G
+48,Texas,71,"Arts, Entertainment, and Recreation",01: Total,7810,8797,125214,G,5033795,G
+48,Texas,72,Accommodation and Food Services,01: Total,43578,62110,1159173,G,25308614,G
+48,Texas,81,Other Services (except Public Administration),01: Total,51301,56428,432273,G,16860800,G
+48,Texas,99,Industries not classified,01: Total,809,809,1449,H,53236,G
+49,Utah,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,98,99,502,G,39900,G
+49,Utah,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,351,375,7895,G,662292,G
+49,Utah,22,Utilities,01: Total,108,243,4565,H,481390,H
+49,Utah,23,Construction,01: Total,11946,12042,106768,G,6311904,G
+49,Utah,31-33,Manufacturing,01: Total,3383,3550,143323,G,9024924,G
+49,Utah,42,Wholesale Trade,01: Total,3078,3693,63573,G,4574816,G
+49,Utah,44-45,Retail Trade,01: Total,7327,10332,168226,G,5944792,G
+49,Utah,48-49,Transportation and Warehousing,01: Total,2453,2778,69955,G,3738498,G
+49,Utah,51,Information,01: Total,1457,2008,58924,G,6147344,G
+49,Utah,52,Finance and Insurance,01: Total,3750,5564,77291,G,6988976,G
+49,Utah,53,Real Estate and Rental and Leasing,01: Total,6021,6702,23247,G,1403278,G
+49,Utah,54,"Professional, Scientific, and Technical Services",01: Total,12019,12643,105877,G,7890188,G
+49,Utah,55,Management of Companies and Enterprises,01: Total,419,513,26839,G,3419263,H
+49,Utah,56,Administrative and Support and Waste Management and Remediation Services,01: Total,4838,5278,161378,G,7387189,G
+49,Utah,61,Educational Services,01: Total,1314,1379,57888,H,2195106,G
+49,Utah,62,Health Care and Social Assistance,01: Total,7619,9306,156591,G,7820582,G
+49,Utah,71,"Arts, Entertainment, and Recreation",01: Total,1390,1459,25112,G,725214,G
+49,Utah,72,Accommodation and Food Services,01: Total,4556,6322,121761,G,2549649,G
+49,Utah,81,Other Services (except Public Administration),01: Total,5433,5923,53948,G,2277722,H
+49,Utah,99,Industries not classified,01: Total,92,92,166,J,4664,G
+50,Vermont,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,140,140,433,G,19911,G
+50,Vermont,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,36,41,467,H,39085,H
+50,Vermont,22,Utilities,01: Total,28,65,1231,H,134444,H
+50,Vermont,23,Construction,01: Total,2735,2741,14041,G,875513,G
+50,Vermont,31-33,Manufacturing,01: Total,946,1002,28838,G,1782451,G
+50,Vermont,42,Wholesale Trade,01: Total,613,708,10640,G,807843,G
+50,Vermont,44-45,Retail Trade,01: Total,2152,3014,35835,G,1274918,G
+50,Vermont,48-49,Transportation and Warehousing,01: Total,415,462,5439,G,266100,G
+50,Vermont,51,Information,01: Total,363,484,6662,G,539295,G
+50,Vermont,52,Finance and Insurance,01: Total,457,930,9825,G,1002339,H
+50,Vermont,53,Real Estate and Rental and Leasing,01: Total,696,801,2911,G,150858,G
+50,Vermont,54,"Professional, Scientific, and Technical Services",01: Total,1994,2084,12560,G,999116,G
+50,Vermont,55,Management of Companies and Enterprises,01: Total,62,72,2257,H,202363,H
+50,Vermont,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1161,1231,8308,G,339069,G
+50,Vermont,61,Educational Services,01: Total,398,421,12604,G,493358,G
+50,Vermont,62,Health Care and Social Assistance,01: Total,1622,2100,48817,G,2611710,G
+50,Vermont,71,"Arts, Entertainment, and Recreation",01: Total,451,465,5144,G,152080,G
+50,Vermont,72,Accommodation and Food Services,01: Total,1675,1897,25274,G,689873,G
+50,Vermont,81,Other Services (except Public Administration),01: Total,1964,2024,8456,G,329979,G
+50,Vermont,99,Industries not classified,01: Total,14,14,16,G,530,H
+51,Virginia,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,646,654,3869,G,228091,G
+51,Virginia,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,153,241,4717,G,370489,G
+51,Virginia,22,Utilities,01: Total,127,384,13920,H,1710967,H
+51,Virginia,23,Construction,01: Total,20325,20677,196104,G,12616711,G
+51,Virginia,31-33,Manufacturing,01: Total,4457,4924,240699,G,14815867,G
+51,Virginia,42,Wholesale Trade,01: Total,4975,6643,101693,G,8457660,G
+51,Virginia,44-45,Retail Trade,01: Total,15235,25776,419876,G,13447811,G
+51,Virginia,48-49,Transportation and Warehousing,01: Total,5048,5924,124268,G,6588047,G
+51,Virginia,51,Information,01: Total,2151,3996,93022,G,11902530,G
+51,Virginia,52,Finance and Insurance,01: Total,5583,10899,165632,G,18848337,G
+51,Virginia,53,Real Estate and Rental and Leasing,01: Total,8138,11198,54978,G,3750263,G
+51,Virginia,54,"Professional, Scientific, and Technical Services",01: Total,27462,31871,519593,G,55655741,G
+51,Virginia,55,Management of Companies and Enterprises,01: Total,770,1251,81060,G,8829608,G
+51,Virginia,56,Administrative and Support and Waste Management and Remediation Services,01: Total,9643,11679,262314,G,13335859,G
+51,Virginia,61,Educational Services,01: Total,2926,3175,76162,G,3394268,G
+51,Virginia,62,Health Care and Social Assistance,01: Total,15856,21929,464373,G,27815045,G
+51,Virginia,71,"Arts, Entertainment, and Recreation",01: Total,2952,3225,48072,G,1496608,G
+51,Virginia,72,Accommodation and Food Services,01: Total,13701,18671,313250,G,7047894,G
+51,Virginia,81,Other Services (except Public Administration),01: Total,21272,22871,156537,G,7272984,G
+51,Virginia,99,Industries not classified,01: Total,283,283,370,H,10046,G
+53,Washington,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,1373,1409,14673,G,831309,G
+53,Washington,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,116,162,1827,G,142891,G
+53,Washington,22,Utilities,01: Total,194,335,10061,J,1241535,J
+53,Washington,23,Construction,01: Total,26154,26396,214722,G,16567692,G
+53,Washington,31-33,Manufacturing,01: Total,6292,6758,250291,G,19065044,G
+53,Washington,42,Wholesale Trade,01: Total,6845,8828,131594,G,11375395,G
+53,Washington,44-45,Retail Trade,01: Total,14133,20755,343060,G,13636819,G
+53,Washington,48-49,Transportation and Warehousing,01: Total,5450,6370,111016,G,6503496,G
+53,Washington,51,Information,01: Total,2584,4194,159350,H,41438207,H
+53,Washington,52,Finance and Insurance,01: Total,5146,10018,114653,G,13147303,G
+53,Washington,53,Real Estate and Rental and Leasing,01: Total,10773,13485,54088,G,3749176,G
+53,Washington,54,"Professional, Scientific, and Technical Services",01: Total,21645,23266,230212,G,25418760,G
+53,Washington,55,Management of Companies and Enterprises,01: Total,751,1125,132291,H,17260603,H
+53,Washington,56,Administrative and Support and Waste Management and Remediation Services,01: Total,9468,10719,164462,G,9436543,G
+53,Washington,61,Educational Services,01: Total,2853,3048,49595,G,1963069,G
+53,Washington,62,Health Care and Social Assistance,01: Total,17759,22569,445995,G,28110622,G
+53,Washington,71,"Arts, Entertainment, and Recreation",01: Total,2980,3224,46140,G,2097977,G
+53,Washington,72,Accommodation and Food Services,01: Total,14173,18134,240523,G,7238725,G
+53,Washington,81,Other Services (except Public Administration),01: Total,16351,17815,106214,G,4821440,G
+53,Washington,99,Industries not classified,01: Total,244,244,342,H,13361,G
+54,West Virginia,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,225,226,720,G,27990,G
+54,West Virginia,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,354,442,16162,H,1350089,H
+54,West Virginia,22,Utilities,01: Total,62,245,5419,H,556629,H
+54,West Virginia,23,Construction,01: Total,3016,3052,23714,G,1378657,G
+54,West Virginia,31-33,Manufacturing,01: Total,953,1065,46626,G,2882650,G
+54,West Virginia,42,Wholesale Trade,01: Total,989,1327,16525,G,981871,G
+54,West Virginia,44-45,Retail Trade,01: Total,3009,5616,78328,G,2322019,G
+54,West Virginia,48-49,Transportation and Warehousing,01: Total,930,1120,15308,H,762568,G
+54,West Virginia,51,Information,01: Total,260,650,7082,G,430335,G
+54,West Virginia,52,Finance and Insurance,01: Total,1063,2015,16519,G,1069502,G
+54,West Virginia,53,Real Estate and Rental and Leasing,01: Total,1106,1360,5717,G,269645,G
+54,West Virginia,54,"Professional, Scientific, and Technical Services",01: Total,2309,2628,22420,G,1405064,G
+54,West Virginia,55,Management of Companies and Enterprises,01: Total,151,221,4278,G,350415,G
+54,West Virginia,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1305,1560,33357,G,1149501,G
+54,West Virginia,61,Educational Services,01: Total,268,278,7695,G,278577,H
+54,West Virginia,62,Health Care and Social Assistance,01: Total,2835,4919,134872,G,7138321,H
+54,West Virginia,71,"Arts, Entertainment, and Recreation",01: Total,602,733,5645,G,117593,G
+54,West Virginia,72,Accommodation and Food Services,01: Total,2593,3614,57596,G,1146198,G
+54,West Virginia,81,Other Services (except Public Administration),01: Total,3961,4207,21085,G,642449,G
+54,West Virginia,99,Industries not classified,01: Total,38,38,54,J,967,H
+55,Wisconsin,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,506,513,3675,H,205773,H
+55,Wisconsin,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,114,138,2255,G,187231,G
+55,Wisconsin,22,Utilities,01: Total,74,368,11803,H,1335895,H
+55,Wisconsin,23,Construction,01: Total,14092,14294,123379,G,9790299,G
+55,Wisconsin,31-33,Manufacturing,01: Total,7297,8457,465378,G,29176863,G
+55,Wisconsin,42,Wholesale Trade,01: Total,5122,6649,122164,G,9127587,G
+55,Wisconsin,44-45,Retail Trade,01: Total,11336,17988,305250,G,9708941,G
+55,Wisconsin,48-49,Transportation and Warehousing,01: Total,5036,5903,112569,G,5540058,G
+55,Wisconsin,51,Information,01: Total,1106,2503,50444,H,4518855,H
+55,Wisconsin,52,Finance and Insurance,01: Total,4548,8769,150094,G,14050217,G
+55,Wisconsin,53,Real Estate and Rental and Leasing,01: Total,4445,5478,28077,G,1439465,G
+55,Wisconsin,54,"Professional, Scientific, and Technical Services",01: Total,10373,11456,115006,G,9475693,G
+55,Wisconsin,55,Management of Companies and Enterprises,01: Total,651,981,73805,G,7500479,G
+55,Wisconsin,56,Administrative and Support and Waste Management and Remediation Services,01: Total,6274,7800,156543,G,6808939,G
+55,Wisconsin,61,Educational Services,01: Total,1587,1671,53760,G,2393192,G
+55,Wisconsin,62,Health Care and Social Assistance,01: Total,10427,17010,403877,G,22412097,G
+55,Wisconsin,71,"Arts, Entertainment, and Recreation",01: Total,2669,2859,34685,G,1349649,G
+55,Wisconsin,72,Accommodation and Food Services,01: Total,11974,14930,209937,G,4141523,G
+55,Wisconsin,81,Other Services (except Public Administration),01: Total,13588,14607,95887,G,3281080,G
+55,Wisconsin,99,Industries not classified,01: Total,122,122,139,G,11154,H
+56,Wyoming,11,"Agriculture, Forestry, Fishing and Hunting",01: Total,89,89,182,H,8737,G
+56,Wyoming,21,"Mining, Quarrying, and Oil and Gas Extraction",01: Total,503,585,12515,G,1194378,G
+56,Wyoming,22,Utilities,01: Total,50,145,2517,J,245652,J
+56,Wyoming,23,Construction,01: Total,2798,2825,16950,G,1016521,G
+56,Wyoming,31-33,Manufacturing,01: Total,560,602,10279,G,787281,G
+56,Wyoming,42,Wholesale Trade,01: Total,632,838,6631,G,443735,G
+56,Wyoming,44-45,Retail Trade,01: Total,1962,2612,30698,G,1046419,G
+56,Wyoming,48-49,Transportation and Warehousing,01: Total,783,968,9429,G,541007,G
+56,Wyoming,51,Information,01: Total,308,471,3647,G,224592,G
+56,Wyoming,52,Finance and Insurance,01: Total,745,1191,7326,G,546772,G
+56,Wyoming,53,Real Estate and Rental and Leasing,01: Total,1203,1318,4410,G,243846,G
+56,Wyoming,54,"Professional, Scientific, and Technical Services",01: Total,2771,2866,11731,G,817705,G
+56,Wyoming,55,Management of Companies and Enterprises,01: Total,88,101,691,G,46478,H
+56,Wyoming,56,Administrative and Support and Waste Management and Remediation Services,01: Total,1139,1224,7189,G,299598,G
+56,Wyoming,61,Educational Services,01: Total,215,224,1946,G,75842,G
+56,Wyoming,62,Health Care and Social Assistance,01: Total,1811,2072,32751,G,1818335,G
+56,Wyoming,71,"Arts, Entertainment, and Recreation",01: Total,512,515,5031,H,132518,G
+56,Wyoming,72,Accommodation and Food Services,01: Total,1602,1845,26586,G,677071,G
+56,Wyoming,81,Other Services (except Public Administration),01: Total,1850,1905,8148,G,303027,G
+56,Wyoming,99,Industries not classified,01: Total,78,78,153,H,5387,G
