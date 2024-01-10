@@ -1,0 +1,52 @@
+/* Add your custom styles here */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px; /* ページ全体の余白を追加 */
+}
+
+.chart-container {
+    margin-bottom: 10px; /* グラフの下に余白を追加 */
+    border-bottom: 2px solid #ccc; /* グラフ間の仕切り線 */
+    padding-bottom: 20px; /* 仕切り線の下に余白を追加 */
+}4
+.chart-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* タイトルの下に余白を追加 */
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: darkblue;
+}
+
+/* 各チャートのスタイリング */
+#chart1, #chart2, #chart3 {
+    margin-bottom: 60px; /* 各チャートの下に余白を追加 */
+    width: 900px; /* グラフの横幅を調整 */
+    height: 400px; /* グラフの高さを調整 */
+}
+
+#chart2, #chart3 {
+    margin-top: 60px; /* 各チャートの上に余白を追加 */
+}
+
+/* チャート全体の左寄せ */
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* セレクトボックスのスタイル */
+select {
+    font-size: 14px;
+}
