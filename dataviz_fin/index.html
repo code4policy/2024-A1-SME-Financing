@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +14,20 @@
     <svg id="avg" width="960" height="500"></svg>
     <h2>Count of Approved Loans</h2>
     <svg id="count" width="960" height="550"></svg>
-    <div class="chart-container">
-        <h2>Yearly Loan Approval by State (7a)</h2>
-        <label for="stateSelect">Select State:</label>
-        <select id="stateSelect"></select>
-        <svg id="chart1" width="960" height="700"></svg>
+    <h1>Yearly Temporal</h1>  
+    <h2>Yearly Loan Approval by State (7a)</h2> 
+    <div id="chart1">
+        <label for="stateDropdown">Select State:</label>
+        <select id="stateDropdown"></select>     
     </div>
-    <div class="chart-container">
-        <h2>Yearly Loan Approval by Industry (7a)</h2>
-        <label for="industrySelect">Select Industry:</label>
-        <select id="industrySelect"></select>
-        <svg id="chart2" width="960" height="700"></svg>
+    <p>Source: Samya What was the source?"<a href="https://www.census.gov/econ_datasets/">Source</a>"</p>
+
+    <h2>Yearly Loan Approval by Industry (7a)</h2>
+    <div id="chart2">
+        <label for="industryDropdown">Select Industry:</label>
+        <select id="industryDropdown"></select>
     </div>
-
-<style>
-    img {
-        width: 1000px;
-        height: 1000px;
-    }
-</style>
-
+    <p>Source: Samya What was the source?"<a href="https://www.census.gov/econ_datasets/">Source</a>"</p>
 </body>
 <script src="script.js"></script>
 <script src="script_count.js"></script>
