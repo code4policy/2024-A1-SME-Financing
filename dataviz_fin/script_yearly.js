@@ -17,7 +17,7 @@ function createBarChartState(data, container, title, yAxisLabel) {
 
     // Setting the size and margins of the SVG area
     const margin = { top: 30, right: 30, bottom: 40, left: 90 },
-        width = 800 - margin.left - margin.right,
+        width = 900 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
     // Adding options for the dropdown menu
@@ -121,7 +121,7 @@ function createBarChartIndustry(data, container, title, yAxisLabel) {
 
     // Setting the size and margins of the SVG area
     const margin = { top: 30, right: 30, bottom: 40, left: 90 },
-        width = 800 - margin.left - margin.right,
+        width = 900 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
     // Adding options for the dropdown menu
