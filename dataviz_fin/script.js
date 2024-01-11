@@ -16,7 +16,7 @@ svg.append("text")
     .attr("x", width / 2)             
     .attr("y", 0 - (margin.top / 2))
     .attr("text-anchor", "middle")  
-    .style("font-size", "16px") 
+    .style("font-size", "20px") 
     .style("text-decoration", "underline")  
     .text("Approved Loan Values");
 
@@ -82,6 +82,18 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
             .attr("width", x1.bandwidth())
             .attr("height", d => height - y(d.value))
             .attr("fill", d => color(d.year));
+
+
+    metricGroups.each(function(metricGroupData) {
+    d3.select(this).selectAll(".year-label")
+        .data(years)
+        .enter().append("text")
+            .attr("class", "year-label")
+            .attr("x", d => x1(d) + x1.bandwidth() / 2)
+            .attr("y", height + 25) // Adjust this value as needed
+            .attr("text-anchor", "middle")
+            .text(d => d);
+});
 })
 })
 ();

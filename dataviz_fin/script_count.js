@@ -82,6 +82,17 @@ d3.csv("SBA_Count_Approved_Loans.csv").then(function(data) {
             .attr("width", x1.bandwidth())
             .attr("height", d => height - y(d.value))
             .attr("fill", d => color(d.year));
+
+    metricGroups.each(function(metricGroupData) {
+    d3.select(this).selectAll(".year-label")
+        .data(years)
+        .enter().append("text")
+            .attr("class", "year-label")
+            .attr("x", d => x1(d) + x1.bandwidth() / 2)
+            .attr("y", height + 25) // Adjust this value as needed
+            .attr("text-anchor", "middle")
+            .text(d => d);
+});
 })
 })
 ();

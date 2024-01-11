@@ -1,19 +1,28 @@
-(function () {
- 
   // Set the dimensions and margins of the chart
-const margin = {top: 70, right: 60, bottom: 90, left: 80},
+(function () {
+
+const margin = {top: 60, right: 60, bottom: 70, left: 80},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 // Append the svg object to the body of the page
-const svg = d3.select("#avg")
+const svg = d3.select("#values")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform", `translate(100,20)`);
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+svg.append("text")
+    .attr("x", width / 2)             
+    .attr("y", 0 - (margin.top / 2))
+    .attr("text-anchor", "middle")  
+    .style("font-size", "20px") 
+    .style("text-decoration", "underline")  
+    .text("Approved Loan Values");
+
 
 // Read the data from the CSV file
-d3.csv("SBA_Avg_Tkt_Size.csv").then(function(data) {
+d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
     // Extract unique metrics and years
     const metrics = [...new Set(data.map(d => d.Metric))];
 
@@ -27,6 +36,9 @@ d3.csv("SBA_Avg_Tkt_Size.csv").then(function(data) {
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(x0));
+        .selectAll("text") // Select all text elements in the X-axis group
+        .style("font-size", "14px") // Increase font size
+        .style("font-weight", "bold"); // Make the text bold
 
 
     // Scale for each year within the metric
@@ -37,7 +49,7 @@ d3.csv("SBA_Avg_Tkt_Size.csv").then(function(data) {
 
     // Add Y axis
     const y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => +d['Avg'])])
+        .domain([0, d3.max(data, d => +d['Val'])])
         .nice()
         .range([height, 0]);
     svg.append("g")
@@ -65,7 +77,7 @@ d3.csv("SBA_Avg_Tkt_Size.csv").then(function(data) {
 
     metricGroups.selectAll("rect")
         .data(d => years.map(year => {
-            return { year: year, value: d.values.find(v => v.year === year)?.['Avg'] || 0 };
+            return { year: year, value: d.values.find(v => v.year === year)?.['Val'] || 0 };
         }))
         .enter().append("rect")
             .attr("x", d => x1(d.year))
@@ -73,6 +85,7 @@ d3.csv("SBA_Avg_Tkt_Size.csv").then(function(data) {
             .attr("width", x1.bandwidth())
             .attr("height", d => height - y(d.value))
             .attr("fill", d => color(d.year));
+
 
     metricGroups.each(function(metricGroupData) {
     d3.select(this).selectAll(".year-label")
