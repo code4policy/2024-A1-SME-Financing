@@ -30,7 +30,7 @@ body{
 }
 
 /* 各チャートのスタイリング */
-#chart1, #chart2, #chart3 {
+/*Deleted Chart 1, #chart1, */#chart2, #chart3 {
     margin-bottom: 20px; /* 各チャートの下に余白を追加 */
     width: 900px; /* グラフの横幅を調整 */
     height: 200px; /* グラフの高さを調整 */

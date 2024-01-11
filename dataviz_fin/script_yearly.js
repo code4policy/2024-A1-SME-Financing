@@ -1,23 +1,22 @@
 // Load data and create charts
 Promise.all([
-    d3.csv("datasets/2_by_state.csv"),
-    d3.csv("datasets/3_by_industry.csv")
+    d3.csv("datasets/Statewise_7a_ApprovalPercentage_Count.csv"),
+    d3.csv("datasets/Sectorwise_7a_ApprovalPercentage_Count.csv")
 ]).then(function(data) {
-    // Deleted Graph 1
-    // Graph 2: Business Applications by State
-    createGroupBarChart(data[1], "#chart2", "Yearly Business Applications by State", "State", "Number of Business Applications");
 
-    // Graph 3: Business Applications by Industry
-    createGroupBarChartForNAICS(data[2], "#chart3", "Yearly Business Applications by Industry", "Industry", "Number of Business Applications");
+    // Graph 1: Loan Approval by State
+    createBarChartState(data[0], "#chart1", "Yearly Loan Approval by State", "Loan Approval Rate");
+
+    // Graph 2: Loan Approval by Industry
+    createBarChartIndustry(data[1], "#chart2", "Yearly Loan Approval by Industry", "Loan Approval Rate");
 });
 
-// Deleted Graph 1: Function to create a line chart
-// Function to create a temporal bar chart
-function createGroupBarChart(data, container, title, yAxisLabel) {
-    const states = ["United States", "North East", "Mid West", "South", "West", "AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"];
+// Function to create a bar chart for states
+function createBarChartState(data, container, title, yAxisLabel) {
+    const states = ["AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VI", "VT", "WA", "WI", "WV", "WY"];
 
     // Setting the size and margins of the SVG area
-    const margin = { top: 30, right: 30, bottom: 80, left: 90 },
+    const margin = { top: 30, right: 30, bottom: 40, left: 90 },
         width = 800 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
@@ -25,7 +24,7 @@ function createGroupBarChart(data, container, title, yAxisLabel) {
     d3.select(container)
         .select("label")
         .text("Select State:");
-    
+
     d3.select(container)
         .select("select")
         .selectAll("option")
@@ -46,19 +45,19 @@ function createGroupBarChart(data, container, title, yAxisLabel) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // Displaying initial data
-    updateBarChart(data, svg, initialState, yAxisLabel, title, width, height, margin);
+    updateBarChartState(data, svg, initialState, yAxisLabel, title, width, height, margin);
 
     // Handling changes in the dropdown
     d3.select(container)
         .select("select")
         .on("change", function() {
             const selectedState = d3.select(this).property("value");
-            updateBarChart(data, svg, selectedState, yAxisLabel, title, width, height, margin);
+            updateBarChartState(data, svg, selectedState, yAxisLabel, title, width, height, margin);
         });
 }
 
-// Function to update the temporal bar chart
-function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, height, margin) {
+// Function to update the bar chart for states
+function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width, height, margin) {
     // Extracting data for the selected state
     const selectedData = data.map(d => ({ year: d.year, value: +d[selectedState] }));
 
@@ -84,8 +83,7 @@ function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, heig
         .attr("class", "label")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom - 10)
-        .style("text-anchor", "middle")
-        ;
+        .style("text-anchor", "middle");
 
     svg.append("g")
         .call(yAxis)
@@ -117,12 +115,12 @@ function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, heig
         .text(title);
 }
 
-// Function to create a temporal bar chart for NAICS codes
-function createGroupBarChartForNAICS(data, container, title, yAxisLabel) {
-    const naicsCodes = ["All Industries", "Agriculture, Forestry, Fishing and Hunting", "Mining, Quarrying, and Oil and Gas Extraction", "Utilities", "Construction", "Manufacturing", "Wholesale Trade", "Retail Trade", "Transportation and Warehousing", "Information", "Finance and Insurance", "Real Estate and Rental and Leasing", "Professional, Scientific, and Technical Services", "Management of Companies and Enterprises", "Administrative and Support and Waste Management and Remediation Services", "Educational Services", "Health Care and Social Assistance", "Arts, Entertainment, and Recreation", "Accommodation and Food Services", "Other Services (except Public Administration)"];
+// Function to create a bar chart for industries
+function createBarChartIndustry(data, container, title, yAxisLabel) {
+    const naicsCodes = ["Accommodation and Food Services", "Administrative and Support and Waste Management and Remediation Services", "Agriculture, Forestry, Fishing and Hunting", "Arts, Entertainment, and Recreation", "Construction", "Educational Services", "Finance and Insurance", "Health Care and Social Assistance", "Information", "Management of Companies and Enterprises", "Manufacturing", "Mining, Quarrying, and Oil and Gas Extraction", "Other Services (except Public Administration)", "Professional, Scientific, and Technical Services", "Public Administration", "Real Estate and Rental and Leasing", "Retail Trade", "Transportation and Warehousing", "Utilities", "Wholesale Trade"];
 
     // Setting the size and margins of the SVG area
-    const margin = { top: 30, right: 30, bottom: 80, left: 90 },
+    const margin = { top: 30, right: 30, bottom: 40, left: 90 },
         width = 800 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
@@ -130,7 +128,7 @@ function createGroupBarChartForNAICS(data, container, title, yAxisLabel) {
     d3.select(container)
         .select("label")
         .text("Select Industry:");
-    
+
     d3.select(container)
         .select("select")
         .selectAll("option")
@@ -151,19 +149,19 @@ function createGroupBarChartForNAICS(data, container, title, yAxisLabel) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // Displaying initial data
-    updateBarChartForNAICS(data, svg, initialNAICSCode, yAxisLabel, title, width, height, margin);
+    updateBarChartIndustry(data, svg, initialNAICSCode, yAxisLabel, title, width, height, margin);
 
     // Handling changes in the dropdown
     d3.select(container)
         .select("select")
         .on("change", function() {
             const selectedNAICSCode = d3.select(this).property("value");
-            updateBarChartForNAICS(data, svg, selectedNAICSCode, yAxisLabel, title, width, height, margin);
+            updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title, width, height, margin);
         });
 }
 
-// Function to update the temporal bar chart for NAICS codes
-function updateBarChartForNAICS(data, svg, selectedNAICSCode, yAxisLabel, title, width, height, margin) {
+// Function to update the bar chart for industries
+function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title, width, height, margin) {
     // Extracting data for the selected NAICS code
     const selectedData = data.map(d => ({ year: d.year, value: +d[selectedNAICSCode] }));
 
@@ -189,8 +187,7 @@ function updateBarChartForNAICS(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("class", "label")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom - 10)
-        .style("text-anchor", "middle")
-        ;
+        .style("text-anchor", "middle");
 
     svg.append("g")
         .call(yAxis)

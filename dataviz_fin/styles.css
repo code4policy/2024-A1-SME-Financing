@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* チャートごとのスタイリング */
+#chart1, #chart2 {
+    margin-bottom: 40px; /* 各チャートの下に余白を追加 */
+    width: 900px; /* グラフの横幅を調整 */
+    height: 250px; /* グラフの高さを調整 */
+    position: relative; /* 相対位置指定を追加 */
+}
+
+/* プルダウンメニューのスタイリング */
+#chart1 select, #chart2 select {
+    position: absolute; /* 絶対位置指定を追加 */
+    top: 0; /* 上端に配置 */
+    left: 10px; /* 左からの位置調整 */
+    z-index: 1; /* プルダウンメニューが前面に表示されるように指定 */
+}
+
+/* 他の要素との競合を防ぐための調整 */
+body {
+    overflow: auto; /* ページ全体のスクロールバーを表示 */
+}
+
+/* チャートのコンテナのスタイリング */
+.chart-container {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.chart-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: darkblue;
+}
