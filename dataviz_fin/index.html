@@ -2,25 +2,31 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financing Visualizations</title>
-    <title>Grouped Bar Chart with D3.js</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
+    <h1>Historical Funding Patterns</h1>  
     <svg id="values" width="960" height="500"></svg>
     <h2>Average Ticket Size of Approved Loans</h2>
     <svg id="avg" width="960" height="500"></svg>
     <h2>Count of Approved Loans</h2>
-	<svg id="count" width="960" height="550"></svg>
+    <svg id="count" width="960" height="550"></svg>
+    <div class="chart-container">
+        <h2>Yearly Loan Approval by State (7a)</h2>
+        <label for="stateSelect">Select State:</label>
+        <select id="stateSelect"></select>
+        <svg id="chart1" width="960" height="700"></svg>
+    </div>
+    <div class="chart-container">
+        <h2>Yearly Loan Approval by Industry (7a)</h2>
+        <label for="industrySelect">Select Industry:</label>
+        <select id="industrySelect"></select>
+        <svg id="chart2" width="960" height="700"></svg>
+    </div>
 
-<img src="Sector-wise Approval Data.png" alt="Sector-wise 7a Approval Data by Count %">
-<style>
-    img {
-        width: 1000px;
-        height: 750px;
-    }
-</style>
-<img src="State-wise Approval Data.png" alt="State-wise 7a Approval Data by Count %">
 <style>
     img {
         width: 1000px;
@@ -32,4 +38,5 @@
 <script src="script.js"></script>
 <script src="script_count.js"></script>
 <script src="script_avg.js"></script>
+<script src="script_yearly.js"></script>
 </html>
