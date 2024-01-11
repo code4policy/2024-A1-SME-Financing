@@ -4,9 +4,7 @@ Promise.all([
     d3.csv("datasets/2_by_state.csv"),
     d3.csv("datasets/3_by_industry.csv")
 ]).then(function(data) {
-    // Graph 1: Yearly Business Applications
-    createLineChart(data[0], "#chart1", "Yearly Business Applications", "Year", "Number of Business Applications");
-
+    // Deleted Graph 1
     // Graph 2: Business Applications by State
     createGroupBarChart(data[1], "#chart2", "Yearly Business Applications by State", "State", "Number of Business Applications");
 
@@ -14,70 +12,8 @@ Promise.all([
     createGroupBarChartForNAICS(data[2], "#chart3", "Yearly Business Applications by Industry", "Industry", "Number of Business Applications");
 });
 
-// Function to create a line chart
-function createLineChart(data, container, title, yAxisLabel) {
-    // Setting the size and margins of the SVG area
-    const margin = { top: 30, right: 30, bottom: 50, left: 80 },
-        width = 700 - margin.left - margin.right,
-        height = 250 - margin.top - margin.bottom;
-
-    // Creating x and y axes
-    const svg = d3.select(container)
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    // Setting the scales for x and y axes
-    const x = d3.scaleLinear().domain([d3.min(data, d => +d.year), d3.max(data, d => +d.year)]).range([0, width]);
-    const y = d3.scaleLinear().domain([0, d3.max(data, d => +d.TOTAL)]).range([height, 0]);
-
-    // Adding x and y axes to the SVG
-    const xAxis = d3.axisBottom(x).tickFormat(d3.format("d"));
-    const yAxis = d3.axisLeft(y);
-    
-    svg.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis)
-        .append("text")
-        .attr("class", "axis-label")
-        .attr("x", width)
-        .attr("y", -6)
-        .style("text-anchor", "end")
-        ;
-
-    svg.append("g")
-        .call(yAxis)
-        .append("text")
-        .attr("class", "axis-label")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", ".71em")
-        .style("text-anchor", "end")
-        .text(yAxisLabel);
-
-    // Drawing the line
-    svg.append("path")
-        .datum(data)
-        .attr("fill", "none")
-        .attr("stroke", "steelblue")
-        .attr("stroke-width", 1.5)
-        .attr("d", d3.line()
-            .x(d => x(+d.year))
-            .y(d => y(+d.TOTAL))
-        );
-
-    // Adding the Title
-    svg.append("text")
-        .attr("x", (width / 2))
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")
-        .attr("class", "chart-title")
-        .text(title);
-}
-
-// Function to create a group bar chart
+// Deleted Graph 1: Function to create a line chart
+// Function to create a temporal bar chart
 function createGroupBarChart(data, container, title, yAxisLabel) {
     const states = ["United States", "North East", "Mid West", "South", "West", "AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"];
 
@@ -122,7 +58,7 @@ function createGroupBarChart(data, container, title, yAxisLabel) {
         });
 }
 
-// Function to update the group bar chart
+// Function to update the temporal bar chart
 function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, height, margin) {
     // Extracting data for the selected state
     const selectedData = data.map(d => ({ year: d.year, value: +d[selectedState] }));
@@ -182,9 +118,9 @@ function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, heig
         .text(title);
 }
 
-// Function to create a group bar chart for NAICS codes
+// Function to create a temporal bar chart for NAICS codes
 function createGroupBarChartForNAICS(data, container, title, yAxisLabel) {
-    const naicsCodes = ["All Industries", "Agriculture, Forestry, Fishing and Hunting", "Mining, Quarrying, and Oil and Gas Extraction", "Utilities", "Construction", "Wholesale Trade", "Information", "Finance and Insurance", "Real Estate and Rental and Leasing", "Professional, Scientific, and Technical Services", "Management of Companies and Enterprises", "Administrative and Support and Waste Management and Remediation Services", "Educational Services", "Health Care and Social Assistance", "Arts, Entertainment, and Recreation", "Accommodation and Food Services", "Other Services (except Public Administration)"];
+    const naicsCodes = ["All Industries", "Agriculture, Forestry, Fishing and Hunting", "Mining, Quarrying, and Oil and Gas Extraction", "Utilities", "Construction", "Manufacturing", "Wholesale Trade", "Retail Trade", "Transportation and Warehousing", "Information", "Finance and Insurance", "Real Estate and Rental and Leasing", "Professional, Scientific, and Technical Services", "Management of Companies and Enterprises", "Administrative and Support and Waste Management and Remediation Services", "Educational Services", "Health Care and Social Assistance", "Arts, Entertainment, and Recreation", "Accommodation and Food Services", "Other Services (except Public Administration)"];
 
     // Setting the size and margins of the SVG area
     const margin = { top: 30, right: 30, bottom: 80, left: 90 },
@@ -227,7 +163,7 @@ function createGroupBarChartForNAICS(data, container, title, yAxisLabel) {
         });
 }
 
-// Function to update the group bar chart for NAICS codes
+// Function to update the temporal bar chart for NAICS codes
 function updateBarChartForNAICS(data, svg, selectedNAICSCode, yAxisLabel, title, width, height, margin) {
     // Extracting data for the selected NAICS code
     const selectedData = data.map(d => ({ year: d.year, value: +d[selectedNAICSCode] }));
