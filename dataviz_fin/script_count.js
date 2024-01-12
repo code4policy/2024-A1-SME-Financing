@@ -55,7 +55,8 @@ d3.csv("SBA_Count_Approved_Loans.csv").then(function(data) {
     // Color palette for each year
     const color = d3.scaleOrdinal()
         .domain(years)
-        .range(d3.schemeCategory10);
+        .range(d3.schemeSpectral[7])
+        .unknown("#ccc");
 
     // Group the data by metric
     const groupedData = metrics.map(metric => {
