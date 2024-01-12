@@ -44,9 +44,13 @@ d3.csv("SBA_Avg_Tkt_Size.csv").then(function(data) {
         .call(d3.axisLeft(y));
 
     // Color palette for each year
+    //const myColorScheme = ["#DC143C", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"];
+
     const color = d3.scaleOrdinal()
         .domain(years)
-        .range(d3.schemeCategory10);
+        .range(d3.schemeSpectral[7])
+        .unknown("#ccc");
+        //.range(myColorScheme); //range(d3.schemeCategory10);
 
     // Group the data by metric
     const groupedData = metrics.map(metric => {

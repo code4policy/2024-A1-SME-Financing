@@ -36,9 +36,6 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(x0));
-        .selectAll("text") // Select all text elements in the X-axis group
-        .style("font-size", "14px") // Increase font size
-        .style("font-weight", "bold"); // Make the text bold
 
 
     // Scale for each year within the metric

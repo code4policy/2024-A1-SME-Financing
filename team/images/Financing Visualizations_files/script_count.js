@@ -1,28 +1,28 @@
-  // Set the dimensions and margins of the chart
 (function () {
-
-const margin = {top: 60, right: 60, bottom: 70, left: 80},
+ 
+  // Set the dimensions and margins of the chart
+const margin = {top: 70, right: 60, bottom: 90, left: 80},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 // Append the svg object to the body of the page
-const svg = d3.select("#values")
+const svg = d3.select("#count")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+    .attr("transform", `translate(100,20)`);
 
 svg.append("text")
     .attr("x", width / 2)             
     .attr("y", 0 - (margin.top / 2))
     .attr("text-anchor", "middle")  
-    .style("font-size", "20px") 
+    .style("font-size", "16px") 
     .style("text-decoration", "underline")  
-    .text("Approved Loan Values");
+    .text("Avg Ticket Sizes");
 
 
 // Read the data from the CSV file
-d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
+d3.csv("SBA_Count_Approved_Loans.csv").then(function(data) {
     // Extract unique metrics and years
     const metrics = [...new Set(data.map(d => d.Metric))];
 
@@ -46,7 +46,7 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
 
     // Add Y axis
     const y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => +d['Val'])])
+        .domain([0, d3.max(data, d => +d['Count'])])
         .nice()
         .range([height, 0]);
     svg.append("g")
@@ -55,8 +55,7 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
     // Color palette for each year
     const color = d3.scaleOrdinal()
         .domain(years)
-        .range(d3.schemeSpectral[7])
-        .unknown("#ccc");
+        .range(d3.schemeCategory10);
 
     // Group the data by metric
     const groupedData = metrics.map(metric => {
@@ -75,7 +74,7 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
 
     metricGroups.selectAll("rect")
         .data(d => years.map(year => {
-            return { year: year, value: d.values.find(v => v.year === year)?.['Val'] || 0 };
+            return { year: year, value: d.values.find(v => v.year === year)?.['Count'] || 0 };
         }))
         .enter().append("rect")
             .attr("x", d => x1(d.year))
@@ -83,7 +82,6 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
             .attr("width", x1.bandwidth())
             .attr("height", d => height - y(d.value))
             .attr("fill", d => color(d.year));
-
 
     metricGroups.each(function(metricGroupData) {
     d3.select(this).selectAll(".year-label")
