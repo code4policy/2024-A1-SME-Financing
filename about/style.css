@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 * {
-    margin: 0;
+    margin: 30;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -14,6 +14,7 @@ body {
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -44,12 +45,12 @@ hr {
 .members {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .team-member {
-    width: calc(25% - 20px);
-    margin: 20px;
+    width: calc(40% - 20px);
+    margin: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -66,8 +67,8 @@ hr {
 }
 
 .profile-circle {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
@@ -94,10 +95,11 @@ p {
     color: #555;
 }
 
-
 nav {
   background-color: #333;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+/*  overflow: hidden;*/
 }
 
 nav a {
