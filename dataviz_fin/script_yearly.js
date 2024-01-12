@@ -11,6 +11,9 @@ Promise.all([
     createBarChartIndustry(data[1], "#chart2", "Yearly Loan Approval by Industry", "Loan Approval Rate");
 });
 
+// Define the yAxisUpperLimit
+const yAxisUpperLimit = 100;
+
 // Function to create a bar chart for states
 function createBarChartState(data, container, title, yAxisLabel) {
     const states = ["AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VI", "VT", "WA", "WI", "WV", "WY"];
@@ -63,7 +66,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
 
     // Setting scales for x and y axes
     const x = d3.scaleBand().domain(selectedData.map(d => d.year)).range([0, width]).padding(0.2);
-    const y = d3.scaleLinear().domain([0, d3.max(selectedData, d => d.value)]).range([height, 0]);
+    const y = d3.scaleLinear().domain([0, yAxisUpperLimit]).range([height, 0]);
 
     // Creating x and y axes
     const xAxis = d3.axisBottom(x);
@@ -103,7 +106,57 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .attr("x", d => x(d.year))
         .attr("width", x.bandwidth())
         .attr("y", d => y(d.value))
-        .attr("height", d => height - y(d.value));
+        .attr("height", d => height - y(d.value))
+        .on("mouseover", function(d) {
+            // Display the actual value as a tooltip on hover
+            const tooltip = d3.select(this)
+                .append("text")
+                .attr("class", "tooltip")
+                .attr("x", x(d.year) + x.bandwidth() / 2)
+                .attr("y", y(d.value) - 5)
+                .attr("text-anchor", "middle")
+                .text(d.value);
+
+            // Store the tooltip reference on the bar element
+            d3.select(this).node().__tooltip = tooltip;
+        })
+        .on("mouseout", function() {
+            // Remove the stored tooltip on mouseout
+            const storedTooltip = d3.select(this).node().__tooltip;
+            if (storedTooltip) {
+                storedTooltip.remove();
+            }
+        });
+
+    // Adding text labels on top of the bars
+    svg.selectAll(".bar-label")
+        .data(selectedData)
+        .enter().append("text")
+        .attr("class", "bar-label")
+        .attr("x", d => x(d.year) + x.bandwidth() / 2)
+        .attr("y", d => y(d.value) - 5)
+        .attr("text-anchor", "middle")
+        .text(d => d.value + "%");
+
+    // Adding the 100% gray bar
+    svg.selectAll(".gray-bar")
+        .data(selectedData)
+        .enter().append("rect")
+        .attr("class", "gray-bar")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", y(yAxisUpperLimit))
+        .attr("height", height - y(yAxisUpperLimit))
+        .attr("fill", "gray")
+        .attr("opacity", 0.3);
+
+    // Adding a solid black line for the y-axis upper limit (showing the 100% line)
+    svg.append("line")
+        .attr("x1", 0)
+        .attr("y1", y(yAxisUpperLimit))
+        .attr("x2", width)
+        .attr("y2", y(yAxisUpperLimit))
+        .attr("stroke", "rgb(0, 0, 0)");
 
     // Adding the graph title
     svg.append("text")
@@ -167,7 +220,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
 
     // Setting scales for x and y axes
     const x = d3.scaleBand().domain(selectedData.map(d => d.year)).range([0, width]).padding(0.2);
-    const y = d3.scaleLinear().domain([0, d3.max(selectedData, d => d.value)]).range([height, 0]);
+    const y = d3.scaleLinear().domain([0, yAxisUpperLimit]).range([height, 0]);
 
     // Creating x and y axes
     const xAxis = d3.axisBottom(x);
@@ -207,7 +260,57 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("x", d => x(d.year))
         .attr("width", x.bandwidth())
         .attr("y", d => y(d.value))
-        .attr("height", d => height - y(d.value));
+        .attr("height", d => height - y(d.value))
+        .on("mouseover", function(d) {
+            // Display the actual value as a tooltip on hover
+            const tooltip = d3.select(this)
+                .append("text")
+                .attr("class", "tooltip")
+                .attr("x", x(d.year) + x.bandwidth() / 2)
+                .attr("y", y(d.value) - 5)
+                .attr("text-anchor", "middle")
+                .text(d.value);
+
+            // Store the tooltip reference on the bar element
+            d3.select(this).node().__tooltip = tooltip;
+        })
+        .on("mouseout", function() {
+            // Remove the stored tooltip on mouseout
+            const storedTooltip = d3.select(this).node().__tooltip;
+            if (storedTooltip) {
+                storedTooltip.remove();
+            }
+        });
+
+    // Adding text labels on top of the bars
+    svg.selectAll(".bar-label")
+        .data(selectedData)
+        .enter().append("text")
+        .attr("class", "bar-label")
+        .attr("x", d => x(d.year) + x.bandwidth() / 2)
+        .attr("y", d => y(d.value) - 5)
+        .attr("text-anchor", "middle")
+        .text(d => d.value + "%");
+    
+    // Adding the 100% gray bar
+    svg.selectAll(".gray-bar")
+        .data(selectedData)
+        .enter().append("rect")
+        .attr("class", "gray-bar")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", y(yAxisUpperLimit))
+        .attr("height", height - y(yAxisUpperLimit))
+        .attr("fill", "gray")
+        .attr("opacity", 0.3);
+
+    // Adding a solid black line for the y-axis upper limit (showing the 100% line)
+    svg.append("line")
+        .attr("x1", 0)
+        .attr("y1", y(yAxisUpperLimit))
+        .attr("x2", width)
+        .attr("y2", y(yAxisUpperLimit))
+        .attr("stroke", "rgb(0, 0, 0)");
 
     // Adding the graph title
     svg.append("text")
