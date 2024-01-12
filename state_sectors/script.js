@@ -67,22 +67,21 @@ function updateVisualization(data, selectedState) {
         .sort((a, b) => d3.descending(a.TotalFirms, b.TotalFirms));
 
     // Update the bar chart
-    updateBarChart(naicsArray);
+    updateBarChart(naicsArray, selectedState);
 }
-
 
 // Declare the svg variable outside the function to keep track of the existing SVG
 let svg;
 
-function updateBarChart(data) {
+function updateBarChart(data, selectedState) {
     // Remove existing chart if it exists
     if (svg) {
         svg.remove();
     }
 
-    const margin = { top: 60, right: 60, bottom: 80, left: 70 };
-    const width = 600 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
+    const margin = { top: 80, right: 30, bottom: 300, left: 110 };
+    const width = 1200 - margin.left - margin.right; // Increase the width
+    const height = 600 - margin.top - margin.bottom;
 
     // Clear the contents of #chart-container
     d3.select("#chart-container").html("");
@@ -98,7 +97,8 @@ function updateBarChart(data) {
     const x = d3.scaleBand()
         .domain(data.map(d => d.NAICS_Description))
         .range([0, width])
-        .padding(0.1);
+        .padding(0.2) // Adjust the padding for better separation
+        .align(0.5); // Align the bars to the center of the band
 
     const y = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.TotalFirms)])
@@ -121,10 +121,42 @@ function updateBarChart(data) {
         .call(d3.axisBottom(x))
         .selectAll("text")
         .attr("transform", "rotate(-45)")
-        .style("text-anchor", "end");
+        .style("text-anchor", "end")
+        .style("font-size", "10px"); // Reduce the font size for x-axis labels
 
     svg.append("g")
         .call(d3.axisLeft(y));
+
+    // Add title
+    svg.append("text")
+        .attr("class", "chart-title") // Add class name here
+        .attr("x", width / 2)
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text(`Small Business Distribution in ${selectedState}`);
+
+    // Add y axis label
+    svg.append("text")
+        .attr("class", "y-axis-label") // Add class name here
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x", 0 - (height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Total Firms");
+
+    // Add link
+    svg.append("text")
+        .attr("class", "source-link") // Add class name here
+        .attr("x", width)
+        .attr("y", height + margin.top + 50) // Adjust the y-coordinate
+        .attr("text-anchor", "end")
+        .style("font-size", "12px")
+        .style("fill", "blue")
+        .text("Source: U.S. Census Bureau")
+        .on("click", function () { window.open("https://www.census.gov/programs-surveys/cbp/data/tables.html", "_blank"); });
 }
 
 // Function to get the midpoint from a range (e.g., "31-33")
