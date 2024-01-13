@@ -84,8 +84,7 @@ function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, heig
         .attr("class", "label")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom - 10)
-        .style("text-anchor", "middle")
-        ;
+        .style("text-anchor", "middle");
 
     svg.append("g")
         .call(yAxis)
@@ -105,7 +104,8 @@ function updateBarChart(data, svg, selectedState, yAxisLabel, title, width, heig
         .attr("x", d => x(d.year))
         .attr("width", x.bandwidth())
         .attr("y", d => y(d.value))
-        .attr("height", d => height - y(d.value));
+        .attr("height", d => height - y(d.value))
+        .classed("covid", d => d.year >= 2020); // Add "covid" class for bars from 2020 onwards
 
     // Adding the graph title
     svg.append("text")
@@ -189,8 +189,7 @@ function updateBarChartForNAICS(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("class", "label")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom - 10)
-        .style("text-anchor", "middle")
-        ;
+        .style("text-anchor", "middle");
 
     svg.append("g")
         .call(yAxis)
@@ -210,7 +209,8 @@ function updateBarChartForNAICS(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("x", d => x(d.year))
         .attr("width", x.bandwidth())
         .attr("y", d => y(d.value))
-        .attr("height", d => height - y(d.value));
+        .attr("height", d => height - y(d.value))
+        .classed("covid", d => d.year >= 2020); // Add "covid" class for bars from 2020 onwards
 
     // Adding the graph title
     svg.append("text")
