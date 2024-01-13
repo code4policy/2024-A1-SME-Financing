@@ -1,7 +1,7 @@
 /* Add your custom styles here */
 body{
     font-family: 'Arial', sans-serif;
-    margin: 20px; /* ページ全体の余白を追加 */
+    margin: 20px; 
     background-color: #e5e5f7;
     opacity: 0.8;
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
@@ -9,15 +9,15 @@ body{
 }
 
 .chart-container {
-    margin-bottom: 10px; /* グラフの下に余白を追加 */
-    border-bottom: 2px solid #black; /* グラフ間の仕切り線 */
-    padding-bottom: 5px; /* 仕切り線の下に余白を追加 */
+    margin-bottom: 10px; 
+    border-bottom: 2px solid #black; 
+    padding-bottom: 5px; 
 }4
 .chart-title {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 25px; /* タイトルの下に余白を追加 */
+    margin-bottom: 25px; 
 }
 
 .axis-label {
@@ -25,40 +25,49 @@ body{
     font-weight: bold;
 }
 
+/* Default color*/
 .bar {
+    fill: lightsteelblue;
+}
+
+/* When hover */
+.bar:hover {
+    fill: blue;
+}
+
+/* Color for bars from 2020 onwards */
+.bar.covid {
     fill: steelblue;
 }
 
-.bar:hover {
+/* Hover color for bars from 2020 onwards */
+.bar.covid:hover {
     fill: darkblue;
 }
 
-/* 各チャートのスタイリング */
+/* Styling of charts */
 /*Deleted Chart 1, #chart1, */#chart2, #chart3 {
-    margin-bottom: 20px; /* 各チャートの下に余白を追加 */
-    width: 900px; /* グラフの横幅を調整 */
-    height: 200px; /* グラフの高さを調整 */
+    margin-bottom: 20px; /
+    width: 900px; 
+    height: 200px; 
 }
 
 #chart2, #chart3 {
-    margin-top: 20px; /* 各チャートの上に余白を追加 */
+    margin-top: 20px; 
 }
 
-/* チャート全体の左寄せ */
 svg {
     display: block;
     margin: 0 auto;
 }
 
-/* セレクトボックスのスタイル */
 select {
     font-size: 14px;
 }
 
-/* テキストのスタイル */
 p {
-    bottom: 20px; /* 下端を親要素の下端に配置 */
-    left: 100px; /* 左端を中央に配置 */
+    bottom: 20px; 
+    left: 100px; 
 }
 
 
@@ -80,3 +89,4 @@ nav a:hover {
   background-color: #ddd;
   color: black;
 }
+
