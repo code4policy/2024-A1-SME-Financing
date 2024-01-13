@@ -27,11 +27,23 @@ body{
     font-weight: bold;
 }
 
+/* Default color*/
 .bar {
+    fill: lightsteelblue;
+}
+
+/* When hover */
+.bar:hover {
+    fill: blue;
+}
+
+/* Color for bars from 2020 onwards */
+.bar.covid {
     fill: steelblue;
 }
 
-.bar:hover {
+/* Hover color for bars from 2020 onwards */
+.bar.covid:hover {
     fill: darkblue;
 }
 

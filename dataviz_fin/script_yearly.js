@@ -13,6 +13,8 @@ Promise.all([
 
 // Define the yAxisUpperLimit
 const yAxisUpperLimit = 100;
+// Define the yAxisUpperLimit
+const xAxisUpperLimit = 2019.5;
 
 // Function to create a bar chart for states
 function createBarChartState(data, container, title, yAxisLabel) {
@@ -100,7 +102,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .style("text-anchor", "end")
         .text(yAxisLabel);
 
-    // Drawing the bars
+    // Drawing the colored bars
     svg.selectAll(".bar")
         .data(selectedData)
         .enter().append("rect")
@@ -140,7 +142,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .attr("text-anchor", "middle")
         .text(d => d.value + "%");
 
-    // Adding the 100% gray bar
+    // Drawing the gray bars
     svg.selectAll(".gray-bar")
         .data(selectedData)
         .enter().append("rect")
@@ -150,7 +152,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .attr("y", y(yAxisUpperLimit))
         .attr("height", height - y(yAxisUpperLimit))
         .attr("fill", "gray")
-        .attr("opacity", 0.3);
+        .attr("opacity", 0.1); // Adjust opacity for better visibility
 
     // Adding a solid black line for the y-axis upper limit (showing the 100% line)
     svg.append("line")
@@ -168,6 +170,17 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .style("font-size", "16px")
         .style("text-decoration", "underline")
         .text(title);
+
+    // Drawing the bars
+    svg.selectAll(".bar")
+        .data(selectedData)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.value))
+        .attr("height", d => height - y(d.value))
+        .classed("covid", d => d.year >= 2020); // Add "covid" class for bars from 2020 onwards
 }
 
 // Function to create a bar chart for industries
@@ -256,7 +269,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .style("text-anchor", "end")
         .text(yAxisLabel);
 
-    // Drawing the bars
+    // Drawing the colored bars
     svg.selectAll(".bar")
         .data(selectedData)
         .enter().append("rect")
@@ -296,7 +309,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("text-anchor", "middle")
         .text(d => d.value + "%");
     
-    // Adding the 100% gray bar
+    // Drawing the gray bars
     svg.selectAll(".gray-bar")
         .data(selectedData)
         .enter().append("rect")
@@ -306,7 +319,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("y", y(yAxisUpperLimit))
         .attr("height", height - y(yAxisUpperLimit))
         .attr("fill", "gray")
-        .attr("opacity", 0.3);
+        .attr("opacity", 0.1); // Adjust opacity for better visibility
 
     // Adding a solid black line for the y-axis upper limit (showing the 100% line)
     svg.append("line")
@@ -324,6 +337,17 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .style("font-size", "16px")
         .style("text-decoration", "underline")
         .text(title);
+
+    // Drawing the bars
+    svg.selectAll(".bar")
+        .data(selectedData)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.value))
+        .attr("height", d => height - y(d.value))
+        .classed("covid", d => d.year >= 2020); // Add "covid" class for bars from 2020 onwards
 }
 
 //グラフ3と4の作成！！！！
@@ -426,7 +450,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .style("text-anchor", "end")
         .text(yAxisLabel);
 
-    // Drawing the bars
+    // Drawing the colored bars
     svg.selectAll(".bar")
         .data(selectedData)
         .enter().append("rect")
@@ -466,7 +490,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .attr("text-anchor", "middle")
         .text(d => d.value + "%");
 
-    // Adding the 100% gray bar
+    // Drawing the gray bars
     svg.selectAll(".gray-bar")
         .data(selectedData)
         .enter().append("rect")
@@ -476,7 +500,7 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .attr("y", y(yAxisUpperLimit))
         .attr("height", height - y(yAxisUpperLimit))
         .attr("fill", "gray")
-        .attr("opacity", 0.3);
+        .attr("opacity", 0.1); // Adjust opacity for better visibility
 
     // Adding a solid black line for the y-axis upper limit (showing the 100% line)
     svg.append("line")
@@ -494,6 +518,17 @@ function updateBarChartState(data, svg, selectedState, yAxisLabel, title, width,
         .style("font-size", "16px")
         .style("text-decoration", "underline")
         .text(title);
+
+    // Drawing the bars
+    svg.selectAll(".bar")
+        .data(selectedData)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.value))
+        .attr("height", d => height - y(d.value))
+        .classed("covid", d => d.year >= 2020); // Add "covid" class for bars from 2020 onwards
 }
 
 // Function to create a bar chart for industries
@@ -582,7 +617,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .style("text-anchor", "end")
         .text(yAxisLabel);
 
-    // Drawing the bars
+    // Drawing the colored bars
     svg.selectAll(".bar")
         .data(selectedData)
         .enter().append("rect")
@@ -622,7 +657,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("text-anchor", "middle")
         .text(d => d.value + "%");
     
-    // Adding the 100% gray bar
+    // Drawing the gray bars
     svg.selectAll(".gray-bar")
         .data(selectedData)
         .enter().append("rect")
@@ -632,7 +667,7 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .attr("y", y(yAxisUpperLimit))
         .attr("height", height - y(yAxisUpperLimit))
         .attr("fill", "gray")
-        .attr("opacity", 0.3);
+        .attr("opacity", 0.1); // Adjust opacity for better visibility
 
     // Adding a solid black line for the y-axis upper limit (showing the 100% line)
     svg.append("line")
@@ -650,6 +685,19 @@ function updateBarChartIndustry(data, svg, selectedNAICSCode, yAxisLabel, title,
         .style("font-size", "16px")
         .style("text-decoration", "underline")
         .text(title);
+
+    // Drawing the bars
+    svg.selectAll(".bar")
+        .data(selectedData)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.year))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.value))
+        .attr("height", d => height - y(d.value))
+        .classed("covid", d => d.year >= 2020); // Add "covid" class for bars from 2020 onwards
 }
+
+
 
 
