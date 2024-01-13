@@ -36,13 +36,13 @@ body{
 }
 
 /* 各チャートのスタイリング */
-#chart1, #chart2 {
+#chart1, #chart2, #chart3, #chart4, #chart5, #chart6 {
     margin-bottom: 40px; /* 各チャートの下に余白を追加 */
     width: 900px; /* グラフの横幅を調整 */
     height: 250px; /* グラフの高さを調整 */
 }
 
-#chart1, #chart2 {
+#chart1, #chart2, #chart3, #chart4, #chart5, #chart6 {
     margin-top: 20px; /* 各チャートの上に余白を追加 */
 }
 
