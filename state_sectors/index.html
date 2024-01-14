@@ -19,6 +19,8 @@
 
     <h1>What Are The Most Common Types of Small Businesses in Each State?</h1>
     
+    <p>As a snapshot of the small business landscape of each state, we have pulled data from the US Census Bureau's County Business Profiles for 2021 to assess the most common types of small businesses by 2-digit NAICS (the North American Industry Classification System) code, as well as the total amount they spent on payroll (in $1000's of US dollars). </p>
+
     <div>
         <label for="stateSelector">Select State:</label>
         <select id="stateSelector"></select>
@@ -27,10 +29,12 @@
     <div id="visualization-container">
         <div id="table-container">
             <h1>Summary of Sectors by Total Number of Firms</h1>
+
             <table id="firms-table">
                 <thead>
                     <tr>
                         <th>NAICS Description</th>
+                        <th>Total Value of Payroll ($1,000)</th>
                         <th>Total Firms</th>
                     </tr>
                 </thead>
@@ -39,6 +43,8 @@
         </div>
         <div id="chart-container"></div>
     </div>
+
+    <button id="downloadCSV">Download CSV</button>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="script.js"></script>

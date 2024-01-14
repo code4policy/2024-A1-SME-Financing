@@ -1,5 +1,9 @@
+let data; // Declare data in a broader scope
+
 // Load the CSV data
-d3.csv("us_state_2digitnaics_2021.csv").then(function(data) {
+d3.csv("us_state_2digitnaics_2021.csv").then(function (csvData) {
+    data = csvData; // Store data in the global variable
+
     // Extract unique state names
     const stateNames = Array.from(new Set(data.map(d => d.State_Name)));
 
@@ -16,12 +20,12 @@ d3.csv("us_state_2digitnaics_2021.csv").then(function(data) {
     updateVisualization(data, initialState);
 
     // Add event listener for state selection change
-    stateSelector.on("change", function() {
+    stateSelector.on("change", function () {
         const selectedState = this.value;
         updateVisualization(data, selectedState);
     });
 
-}).catch(function(error) {
+}).catch(function (error) {
     console.log("Error loading the CSV file:", error);
 });
 
@@ -36,14 +40,24 @@ function updateVisualization(data, selectedState) {
         }
     });
 
-    // Group data by NAICS code and calculate total firms
-    const naicsData = d3.rollup(stateData, v => d3.sum(v, d => +d.Firms.replace(/,/g, '')), d => d["NAICS_Description"]);
+    // Group data by NAICS code and calculate total firms and total payroll
+    const naicsData = d3.rollup(stateData, 
+        v => ({
+            TotalFirms: d3.sum(v, d => +d.Firms.replace(/,/g, '')),
+            TotalPayroll: d3.sum(v, d => +d["Annual_Payroll_($1,000)"].replace(/,/g, ''))
+        }), 
+        d => d["NAICS_Description"]
+    );
 
     // Convert the grouped data to an array of objects
-    let naicsArray = Array.from(naicsData, ([key, value]) => ({ NAICS_Description: key, TotalFirms: value }));
+    let naicsArray = Array.from(naicsData, ([key, value]) => ({ 
+        NAICS_Description: key, 
+        TotalFirms: value.TotalFirms,
+        TotalPayroll: value.TotalPayroll 
+    }));
 
     // Sort the data by NAICS Description (most firms to least)
-    naicsArray.sort((a, b) => b.TotalFirms - a.TotalFirms);
+    naicsArray.sort((a, b) => b.TotalPayroll - a.TotalPayroll);
 
     // Update the table
     const tableBody = d3.select("tbody");
@@ -55,16 +69,19 @@ function updateVisualization(data, selectedState) {
     rows.exit().remove();
 
     // Update existing rows
-    rows.select("td:nth-child(2)").text(d => d.TotalFirms.toLocaleString());
+    rows.select("td:nth-child(2)").text(d => d.TotalPayroll.toLocaleString());
+    // Add the new column for Total Payroll
+    rows.select("td:nth-child(3)").text(d => d.TotalFirms.toLocaleString());
 
     // Append new rows
     const newRows = rows.enter().append("tr");
     newRows.append("td").text(d => d.NAICS_Description);
-    newRows.append("td").text(d => d.TotalFirms.toLocaleString());
+    newRows.append("td").text(d => d.TotalPayroll.toLocaleString());
+    newRows.append("td").text(d => d.TotalFirms.toLocaleString()); // Add new column
 
     // Sort the table rows based on NAICS Description
     tableBody.selectAll("tr")
-        .sort((a, b) => d3.descending(a.TotalFirms, b.TotalFirms));
+        .sort((a, b) => d3.descending(a.TotalPayroll, b.TotalPayroll));
 
     // Update the bar chart
     updateBarChart(naicsArray, selectedState);
@@ -101,7 +118,7 @@ function updateBarChart(data, selectedState) {
         .align(0.5); // Align the bars to the center of the band
 
     const y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.TotalFirms)])
+        .domain([0, d3.max(data, d => d.TotalPayroll)])
         .nice()
         .range([height, 0]);
 
@@ -111,9 +128,9 @@ function updateBarChart(data, selectedState) {
         .enter()
         .append("rect")
         .attr("x", d => x(d.NAICS_Description) + 5)
-        .attr("y", d => y(d.TotalFirms))
+        .attr("y", d => y(d.TotalPayroll))
         .attr("width", x.bandwidth() - 10)
-        .attr("height", d => height - y(d.TotalFirms))
+        .attr("height", d => height - y(d.TotalPayroll))
         .attr("fill", "steelblue");
 
     svg.append("g")
@@ -145,7 +162,7 @@ function updateBarChart(data, selectedState) {
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .style("text-anchor", "middle")
-        .text("Total Firms");
+        .text("Total Payroll ($1000 USD)");
 
     // Add link
     svg.append("text")
@@ -163,4 +180,23 @@ function updateBarChart(data, selectedState) {
 function getMidpointFromRange(range) {
     const [start, end] = range.split('-').map(Number);
     return Math.floor((start + end) / 2).toString();
+}
+
+// Add event listener for download button
+document.getElementById('downloadCSV').addEventListener('click', function () {
+    downloadCSV(data, 'us_state_2digitnaics_2021.csv');
+});
+
+// Function to download CSV
+function downloadCSV(data, filename) {
+    const csvContent = "data:text/csv;charset=utf-8," +
+        d3.csvFormat(data);
+
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", filename);
+    document.body.appendChild(link); // Required for FF
+
+    link.click(); // This will download the data file named "us_state_2digitnaics_2021.csv".
 }
