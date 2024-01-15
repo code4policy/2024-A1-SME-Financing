@@ -97,11 +97,14 @@ function updateBarChart(data, selectedState) {
     }
 
     const margin = { top: 80, right: 30, bottom: 300, left: 110 };
-    const width = 1200 - margin.left - margin.right; // Increase the width
+    const width = 600 - margin.left - margin.right; // Increase the width
     const height = 600 - margin.top - margin.bottom;
 
     // Clear the contents of #chart-container
     d3.select("#chart-container").html("");
+
+    // Take only the top 10 sectors
+    const top10Data = data.slice(0, 10);
 
     // Create a new SVG
     svg = d3.select("#chart-container")
@@ -112,19 +115,19 @@ function updateBarChart(data, selectedState) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     const x = d3.scaleBand()
-        .domain(data.map(d => d.NAICS_Description))
+        .domain(top10Data.map(d => d.NAICS_Description))
         .range([0, width])
         .padding(0.2) // Adjust the padding for better separation
         .align(0.5); // Align the bars to the center of the band
 
     const y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d.TotalPayroll)])
+        .domain([0, d3.max(top10Data, d => d.TotalPayroll)])
         .nice()
         .range([height, 0]);
 
     svg.append("g")
         .selectAll("rect")
-        .data(data)
+        .data(top10Data)
         .enter()
         .append("rect")
         .attr("x", d => x(d.NAICS_Description) + 5)
