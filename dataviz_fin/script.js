@@ -12,13 +12,30 @@ const svg = d3.select("#values")
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
+// svg.append("text")
+//     .attr("x", width / 2)             
+//     .attr("y", 0 - (margin.top / 2))
+//     .attr("text-anchor", "middle")  
+//     .style("font-size", "20px") 
+//     .style("text-decoration", "underline")  
+//     .text("Approved Loan Values");
+
+// Add x-axis label
 svg.append("text")
-    .attr("x", width / 2)             
-    .attr("y", 0 - (margin.top / 2))
-    .attr("text-anchor", "middle")  
-    .style("font-size", "20px") 
-    .style("text-decoration", "underline")  
-    .text("Approved Loan Values");
+    .attr("class", "axis-label")
+    .attr("x", width / 2)
+    .attr("y", height + margin.bottom - 10) // Adjust the vertical position
+    .style("text-anchor", "middle")
+    .text("Year (since 2018)");
+
+// Add y-axis label
+svg.append("text")
+    .attr("class", "axis-label")
+    .attr("x", -height / 2)
+    .attr("y", -margin.left + 20) // Adjust the vertical position
+    .attr("transform", "rotate(-90)")
+    .style("text-anchor", "middle")
+    .text("Approved Loan Values (in billions USD)");
 
 
 // Read the data from the CSV file
@@ -54,9 +71,9 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
 
     // Color palette for each year
     const color = d3.scaleOrdinal()
-        .domain(years)
-        .range(d3.schemeSpectral[7])
-        .unknown("#ccc");
+    .domain(years)
+    .range(years.map(year => (year >= 2020) ? "steelblue" : "lightsteelblue"));
+    
 
     // Group the data by metric
     const groupedData = metrics.map(metric => {
@@ -74,15 +91,23 @@ d3.csv("SBA_Approved_Loan_Values.csv").then(function(data) {
         .attr("transform", d => `translate(${x0(d.metric)}, 0)`);
 
     metricGroups.selectAll("rect")
-        .data(d => years.map(year => {
-            return { year: year, value: d.values.find(v => v.year === year)?.['Val'] || 0 };
-        }))
-        .enter().append("rect")
-            .attr("x", d => x1(d.year))
-            .attr("y", d => y(d.value))
-            .attr("width", x1.bandwidth())
-            .attr("height", d => height - y(d.value))
-            .attr("fill", d => color(d.year));
+    .data(d => years.map(year => {
+        return { year: year, value: d.values.find(v => v.year === year)?.['Val'] || 0 };
+    }))
+    .enter().append("rect")
+    .attr("x", d => x1(d.year))
+    .attr("y", d => y(d.value))
+    .attr("width", x1.bandwidth())
+    .attr("height", d => height - y(d.value))
+    .attr("class", d => (d.year >= 2020) ? "bar covid" : "bar") // Add class for styling
+    .on("mouseover", function() {
+        d3.select(this).attr("fill", "orange"); // Change color on hover
+    })
+    .on("mouseout", function(d) {
+        const year = d.year >= 2020 ? "covid" : ""; // Determine the class to apply
+        d3.select(this).attr("fill", `url(#${year}pattern)`); // Restore the pattern fill
+    });
+
 
 
     metricGroups.each(function(metricGroupData) {
