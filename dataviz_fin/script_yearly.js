@@ -5,10 +5,10 @@ Promise.all([
 ]).then(function(data) {
 
     // Graph 1: Loan Approval by State
-    createBarChartState(data[0], "#chart1", "Yearly Loan Approval by State", "Loan Approval Rate");
+    createBarChartState(data[0], "#chart1", "Yearly Loan Approval by State (% of US Total)", "Loan Approval Rate");
 
     // Graph 2: Loan Approval by Industry
-    createBarChartIndustry(data[1], "#chart2", "Yearly Loan Approval by Industry", "Loan Approval Rate");
+    createBarChartIndustry(data[1], "#chart2", "Yearly Loan Approval by Industry (% of US Total)", "Loan Approval Rate");
 });
 
 // Define the yAxisUpperLimit
@@ -358,10 +358,10 @@ Promise.all([
 ]).then(function(data) {
 
     // Graph 3: Loan Approval by State
-    createBarChartState(data[0], "#chart3", "Yearly Loan Approval by State", "Loan Approval Rate");
+    createBarChartState(data[0], "#chart3", "Yearly Loan Approval by State (% of US Total)", "Loan Approval Rate");
 
     // Graph 4: Loan Approval by Industry
-    createBarChartIndustry(data[1], "#chart4", "Yearly Loan Approval by Industry", "Loan Approval Rate");
+    createBarChartIndustry(data[1], "#chart4", "Yearly Loan Approval by Industry (% of US Total)", "Loan Approval Rate");
 });
 
 // Function to create a bar chart for states
