@@ -5,10 +5,10 @@ Promise.all([
 ]).then(function(data) {
     // Deleted Graph 1
     // Graph 2: Business Applications by State
-    createGroupBarChart(data[0], "#chart2", "Yearly Business Applications by State", "State", "Number of Business Applications");
+    createGroupBarChart(data[0], "#chart2", "Yearly Business Applications by State (Absolute Number)", "State", "Number of Business Applications");
 
     // Graph 3: Business Applications by Industry
-    createGroupBarChartForNAICS(data[1], "#chart3", "Yearly Business Applications by Industry", "Industry", "Number of Business Applications");
+    createGroupBarChartForNAICS(data[1], "#chart3", "Yearly Business Applications by Industry (Absolute Number)", "Industry", "Number of Business Applications");
 });
 
 // Deleted Graph 1: Function to create a line chart

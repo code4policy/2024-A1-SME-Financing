@@ -155,7 +155,7 @@ function updateBarChart(data, selectedState) {
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
         .style("text-decoration", "underline")
-        .text(`Small Business Distribution in ${selectedState}`);
+        .text(`Small Business Distribution in ${selectedState} (in USD '000)`);
 
     // Add y axis label
     svg.append("text")
