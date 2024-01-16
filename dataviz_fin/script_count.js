@@ -12,13 +12,23 @@ const svg = d3.select("#count")
     .append("g")
     .attr("transform", `translate(100,20)`);
 
+
+// Add x-axis label
 svg.append("text")
-    .attr("x", width / 2)             
-    .attr("y", 0 - (margin.top / 2))
-    .attr("text-anchor", "middle")  
-    .style("font-size", "16px") 
-    .style("text-decoration", "underline")  
-    .text("Avg Ticket Sizes");
+    .attr("class", "axis-label")
+    .attr("x", width / 2)
+    .attr("y", height + margin.bottom - 10) // Adjust the vertical position
+    .style("text-anchor", "middle")
+    .text("Year (since 2018)");
+
+// Add y-axis label
+svg.append("text")
+    .attr("class", "axis-label")
+    .attr("x", -height / 2)
+    .attr("y", -margin.left + 20) // Adjust the vertical position
+    .attr("transform", "rotate(-90)")
+    .style("text-anchor", "middle")
+    .text("No. of approved loans");
 
 
 // Read the data from the CSV file
@@ -54,9 +64,8 @@ d3.csv("SBA_Count_Approved_Loans.csv").then(function(data) {
 
     // Color palette for each year
     const color = d3.scaleOrdinal()
-        .domain(years)
-        .range(d3.schemeSpectral[7])
-        .unknown("#ccc");
+    .domain(years)
+    .range(years.map(year => (year >= 2020) ? "steelblue" : "lightsteelblue"));
 
     // Group the data by metric
     const groupedData = metrics.map(metric => {
@@ -74,15 +83,22 @@ d3.csv("SBA_Count_Approved_Loans.csv").then(function(data) {
         .attr("transform", d => `translate(${x0(d.metric)}, 0)`);
 
     metricGroups.selectAll("rect")
-        .data(d => years.map(year => {
-            return { year: year, value: d.values.find(v => v.year === year)?.['Count'] || 0 };
-        }))
-        .enter().append("rect")
-            .attr("x", d => x1(d.year))
-            .attr("y", d => y(d.value))
-            .attr("width", x1.bandwidth())
-            .attr("height", d => height - y(d.value))
-            .attr("fill", d => color(d.year));
+    .data(d => years.map(year => {
+        return { year: year, value: d.values.find(v => v.year === year)?.['Count'] || 0 };
+    }))
+    .enter().append("rect")
+    .attr("x", d => x1(d.year))
+    .attr("y", d => y(d.value))
+    .attr("width", x1.bandwidth())
+    .attr("height", d => height - y(d.value))
+    .attr("class", d => (d.year >= 2020) ? "bar covid" : "bar") // Add class for styling
+    .on("mouseover", function() {
+        d3.select(this).attr("fill", "orange"); // Change color on hover
+    })
+    .on("mouseout", function(d) {
+        const year = d.year >= 2020 ? "covid" : ""; // Determine the class to apply
+        d3.select(this).attr("fill", `url(#${year}pattern)`); // Restore the pattern fill
+    });
 
     metricGroups.each(function(metricGroupData) {
     d3.select(this).selectAll(".year-label")

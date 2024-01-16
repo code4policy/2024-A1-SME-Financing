@@ -30,6 +30,8 @@ body{
 /* Default color*/
 .bar {
     fill: lightsteelblue;
+    transition: fill 0.3s; /* Add smooth transition */
+
 }
 
 /* When hover */
