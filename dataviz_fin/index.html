@@ -20,44 +20,140 @@
 
     <h1>Historical Funding Patterns</h1>  
     <h2>Approved Loan Values</h2>
-    <svg id="values" width="960" height="500"></svg>
-    <h2>Average Ticket Size of Approved Loans</h2>
-    <svg id="avg" width="960" height="500"></svg>
-    <h2>Count of Approved Loans</h2>
-    <svg id="count" width="960" height="550"></svg>
+
+    <p><b>The Small Business Administration (SBA)</b>'s primary funding mechanisms to small businesses has been through its <b>7(a)</b> and <b>504 programs</b>.</p>
+    <p><b>The 7(a) program</b> is SBA's primary business loan program for providing financial assistance to small businesses. It provides loan guaranties to lenders (maximum value $5 million) so small businesses can go about:</p>
+    <ul>
+        <li>Acquiring, refinancing, or improving real estate and buildings</li>
+        <li>Short- and long-term working capital</li>
+        <li>Purchasing and installation of machinery and equipment</li>
+        <li>Purchasing furniture, fixtures, and supplies</li>
+        <li>Changes of ownership (complete or partial)</li>
+        <li>Multiple purpose loans, including any of the above</li>
+    </ul>
+    <p><b>The 504 Loan Program</b> provides long-term, fixed rate financing for major fixed assets that promote business growth and job creation. These are available through Certified Development Companies (CDCs), SBA's community-based partners who regulate nonprofits and promote economic development within their communities. The maximum loan amount for a 504 loan is $5.5 million, with no more than 3 projects totaling $16.5 million.</p>
+    <p>Understanding the trend of funding prior to the COVID-19 pandemic and during will help the SBA understand the impact of the economic shock of COVID and whether the stimulus provided in other forms (Paycheck Protection Program loans, Economic Injury Disaster Loans, Pandemic Unemployment Assistance, etc.) was sufficient to help small businesses weather the storm.</p>
     
+    <h2>Approved Loan Values (USD)</h2>
+    <svg id="values" width="960" height="500"></svg>
+    <p>Source: <a href="https://advocacy.sba.gov/2023/11/14/2023-small-business-profiles-for-the-states-territories-and-nation/">Small Business Administration Webesite</a></p>
+    <h2>Average Ticket Size of Approved Loans (USD)</h2>
+    <svg id="avg" width="960" height="500"></svg>
+    <p>Source: <a href="https://advocacy.sba.gov/2023/11/14/2023-small-business-profiles-for-the-states-territories-and-nation/">Small Business Administration Webesite</a></p>
+    <h2>Count of Approved Loans (Number of loans)</h2>
+    <svg id="count" width="960" height="550"></svg>
+    <p>Source: <a href="https://advocacy.sba.gov/2023/11/14/2023-small-business-profiles-for-the-states-territories-and-nation/">Small Business Administration Webesite</a></p>
+    
+    <h1>7a and 504 financing programs by SBA</h1> 
+    <p>Based on the 7a and 504 lending data at a State and sector-level as reported by SBA, we observed the following trends from 2018 to 2023. </p>
+    <p>We took average value of shares of lending allocated from the total loan value in USD at a State and sector level during the years.</p>
     <h1>Loan dollars of 7a programs - Proportions of State/Sectors by Year</h1> 
-    <h2>Counted through dollar value</h2> 
-    <h2>Proportions of State by Year</h2> 
+    <p>The top 5 States who received the largest share of average 7a funding from 2018-2023 were:</p>
+    <ul>
+        <li>California</li>
+        <li>Texas</li>
+        <li>Florida</li>
+        <li>Georgia</li>
+        <li>New York</li>
+    </ul>
+
+    <p>In terms of share of financing for 7a loans, the following States received the lowest over 5 years:</p>
+    <ul>
+        <li>Wyoming</li>
+        <li>North Dakota</li>
+        <li>District of Columbia</li>
+        <li>Hawaii</li>
+        <li>Vermont</li>
+    </ul>
+    <h2>Proportions of USD Value by State</h2> 
     <div id="chart1">
         <label for="stateDropdown1">Select State:</label>
         <select id="stateDropdown1"></select>     
     </div>
-    <p>Source: Samya What was the source?"<a href="https://www.census.gov/econ_datasets/">Source</a>"</p>
+    <p>Source: <a href="https://careports.sba.gov/views/7a504Summary/Report?%3Aembed=y&%3AisGuestRedirectFromVizportal=y">Small Business Administration Webesite</a></p>
 
-    <h2>Proportions of Industry by Year</h2>
+    <h2>Proportions of USD by Industry</h2>
     <div id="chart2">
         <label for="industryDropdown2">Select Industry:</label>
         <select id="industryDropdown2"></select>
     </div>
-    <p>Source: Samya What was the source?"<a href="https://www.census.gov/econ_datasets/">Source</a>"</p>
-
+    <p>Source: <a href="https://careports.sba.gov/views/7a504Summary/Report?%3Aembed=y&%3AisGuestRedirectFromVizportal=y">Small Business Administration Webesite</a></p>
     <h1>Loan dollars of 504 programs - Proportions of State/Sectors by Year</h1> 
-    <h2>Counted through dollar value</h2> 
-    <h2>Proportions of State by Year</h2> 
+        <p>In terms of largest share of average 504 funding from 2018 to 2023, the top 5 States were:</p>
+    <ul>
+        <li>California</li>
+        <li>Florida</li>
+        <li>Texas</li>
+        <li>Illinois</li>
+        <li>New York</li>
+    </ul>
+
+    <p>In terms of share of financing for 504 loans, the following States received the lowest over 5 years:</p>
+    <ul>
+        <li>Wyoming</li>
+        <li>District of Columbia</li>
+        <li>Mississippi</li>
+        <li>Delaware</li>
+        <li>West Virginia</li>
+    </ul>
+    <h2>Proportions of USD Value by State</h2> 
     <div id="chart3">
         <label for="stateDropdown3">Select State:</label>
         <select id="stateDropdown3"></select>     
     </div>
-    <p>Source: Samya What was the source?"<a href="https://www.census.gov/econ_datasets/">Source</a>"</p>
+    <p>Source: <a href="https://careports.sba.gov/views/7a504Summary/Report?%3Aembed=y&%3AisGuestRedirectFromVizportal=y">Small Business Administration Webesite</a></p>
 
-    <h2>Proportions of Industry by Year</h2>
+    <h2>Proportions of USD by Industry</h2>
     <div id="chart4">
         <label for="industryDropdown4">Select Industry:</label>
         <select id="industryDropdown4"></select>
     </div>
-    <p>Source: Samya What was the source?"<a href="https://www.census.gov/econ_datasets/">Source</a>"</p>
-
+    <p>Source: <a href="https://careports.sba.gov/views/7a504Summary/Report?%3Aembed=y&%3AisGuestRedirectFromVizportal=y">Small Business Administration Webesite</a></p>
+    <h2>Key Observatons at a State and Industry level</h2>
+    <p>States that received a much higher share of 7a loans than their share of business (by at least 2%) were California and Texas</p>
+    <p>States that received a much higher share of 504 loans than their share of business (by at least 2%) were California and Utah</p>
+    <p><b>Where did these excess shares come from?</b></p>
+    <p>The States that received much lower funding than their share of the businesses are highlighted below:<p>
+    <ul>
+        <li>New York received a much lower share of 7a funding than it’s share of businesses</li>
+        <li>The following states received a much lower share of 504 funding than their share of businesses (difference> 1% of total funding). <ul>
+            <li>Maryland</li>
+            <li>New York</li>
+            <li>North Carolina</li>
+            <li>Pennsylvania</li>
+            <li>Tennessee</li>
+            <li>Texas</li></ul></li>
+    </ul>
+    <p>The top 5 sectors receiving the highest share of 7a and 504 funding are:</p>
+    <ul>
+        <li>Construction</li>
+        <li>Wholesale Trade</li>
+        <li>Professional, Scientific, and Technical Services</li>
+        <li>Health Care and Social Assistance</li>
+        <li>Accommodation and Food Services</li>
+    </ul>
+    <p>Sectors receiving a higher share of 7a financing than their share of business are:</p>
+    <ul>
+        <li>Agriculture, Forestry, Fishing and Hunting</li>
+        <li>Accommodation and Food Services</li>
+    </ul>
+    <p>Sectors that received a lower share of 7a funding than their share of business (by at least 1% or more difference in share) were:</p>
+    <ul>
+        <li>Construction</li>
+        <li>Finance and Insurance</li>
+        <li>Real Estate and Rental and Leasing</li>
+        <li>Professional, Scientific, and Technical Services</li>
+        <li>Administrative and Support and Waste Management and Remediation Services</li>
+        <li>Health Care and Social Assistance</li>
+    </ul>
+    <p>Sectors that received a lower share of 504 funding than their share of business (by at least 1% or higher difference), were:</p>
+    <ul>
+        <li>Construction</li>
+        <li>Finance and Insurance</li>
+        <li>Real Estate and Rental and Leasing</li>
+        <li>Professional, Scientific, and Technical Services</li>
+        <li>Administrative and Support and Waste Management and Remediation Services</li>
+    </ul>
 </body>
 <script src="script.js"></script>
 <script src="script_count.js"></script>
